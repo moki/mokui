@@ -1,0 +1,23 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": [
+        "master"
+      ],
+      "conventionalCommits": true
+    },
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "conventionalCommits": true,
+      "yes": true
+    }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent"
+}
