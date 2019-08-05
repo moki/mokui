@@ -9,7 +9,8 @@
   "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "parcel-bundler": "^1.12.3"
   },
   "scripts": {
     "build": "lerna run build --stream"

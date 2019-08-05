@@ -43,22 +43,13 @@ cat -u >> package.json << EOF
   "main": "dist/$NAMESPACE.$PKG.js",
   "module": "index.js",
   "scripts": {
-    "build": "make"
+    "dev": "parcel $NAMESPACE-$PKG-demo.html",
+    "build": "parcel build index.js"
   }
 }
 EOF
 
 $DEPMNGR init $DEPMNGRSKIPFL
 
-# makefile template
-cat -u >> makefile << EOF
-CSS_TARGET=$NAMESPACE-$PKG.css
-CSS_SRC=\$(shell find . -type f -name '*.css' ! -name \$(CSS_TARGET))
-
-\$(CSS_TARGET): \$(CSS_SRC)
-	-rm -f \$(CSS_TARGET)
-	cat \$(CSS_SRC) >> \$@
-
-clean:
-	-rm \$(CSS_TARGET)
-EOF
+# adds directory field to package.json's repository field
+sed -i "s|\"repository\":.*|\"repository\": {\n    \"type\": \"git\",\n    \"url\": \"$REPO\",\n    \"directory\": \"packages\/$NAMESPACE-$PKG\"\n  },|g" package.json
