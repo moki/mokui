@@ -16,20 +16,16 @@ Modificators
 | ----------- | ------------- | ---------------------------------------------- |
 | typography  | default       | establishes default typography, which includes |
 |             |               | system font stack and font bells and whistels. |
-|             |               |                                                |
 | breakpoint  | default       | defines default screen breakpoints,            |
 |             |               | althought some are still hardcoded due         |
 |             |               | to native css limitations                      |
 |             |               |   --screen-m: 768px;                           |
 |             |               |   --screen-l: 992px;                           |
 |             |               |   --screen-xl: 1200px;                         |
-|             |               |                                                |
 | msp         | perfect-fifth | defines perfect fifth as a primary             |
 |             |               | modular scale                                  |
-|             |               |                                                |
 | msc         | major-third   | defines major third as a complimentary         |
 |             |               | modular scale                                  |
-|             |               |                                                |
 | modular     |               | both modular scales are scalings of the base   |
 | scale       |               | ms*-0 by the ratio ms*-1                       |
 |             |               | variables from ms*-m1 down to the ms*-m6       |
@@ -40,14 +36,10 @@ Modificators
 |             |               | represents ratio^n, where ratio is the scale   |
 |             |               | ratio(1.25 in case of the major third)         |
 |             |               | and n is the range [1, 16]                     |
-|             |               |                                                |
 | gap         | default       | default gap is defined as a base of the        |
 |             |               | primary modular scale.                         |
-|             |               |                                                |
 | color       | light         | defines light color palette variables          |
-|             |               |                                                |
 | color       | dark          | defines dark color palette variables           |
-|             |               |                                                |
 |             |               | both color palette variables are:              |
 |             |               |   --color-primary                              |
 |             |               |   --color-primary-light                        |
@@ -69,7 +61,5 @@ Modificators
 |             |               |   --color-on-surface                           |
 |             |               |   --color-on-error                             |
 |             |               |   --color-on-success                           |
-|             |               |                                                |
 | header      | default       | sets header height to default which is auto    |
-|             |               |                                                |
 | footer      | default       | sets footer height to default which is auto    |
