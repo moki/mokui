@@ -13,6 +13,9 @@
     "url": "git@github.com:moki/mokui.git",
     "directory": "packages/mokui-theme"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
   "license": "BSD-3-Clause"
 }
