@@ -1,0 +1,18 @@
+{
+  "name": "@moki.codes/mokui-theme",
+  "version": "0.0.0",
+  "description": "theme web ui component",
+  "keywords": [
+    "component",
+    "theme",
+    "web",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-theme"
+  },
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "license": "BSD-3-Clause"
+}

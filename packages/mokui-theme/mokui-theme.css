@@ -1,0 +1,172 @@
+/* reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+        margin: 0;
+        padding: 0;
+}
+
+/* theme */
+
+/* layout elements size */
+.theme_header_default {
+        --layout-header-height: auto;
+}
+
+.theme_footer_default {
+        --layout-footer-height: auto;
+}
+
+/* typography */
+html {
+        font-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+        html {
+                font-size: 112.5%;
+        }
+}
+
+.theme_typography_default {
+        font-family: -apple-system, 
+                     BlinkMacSystemFont, 
+                     "Segoe UI", 
+                     Roboto, 
+                     Oxygen,
+                     Ubuntu,
+                     Cantarell,
+                     "Open Sans",
+                     "Helvetica Neue", 
+                     sans-serif,
+                     "Apple Color Emoji",
+                     "Segoe UI Emoji",
+                     "Segoe UI Symbol";
+}
+
+/* breakpoints */
+.theme_breakpoint_default {
+        --screen-m: 768px;
+        --screen-l: 992px;
+        --screen-xl: 1200px;
+}
+
+/* gap */
+.theme_gap_default {
+        --gap: var(--msp-0);
+}
+
+/* modular scale */
+.theme_msp_perfect-fifth {
+        --msp-16: 656.841rem;
+        --msp-15: 437.894rem;
+        --msp-14: 291.929rem;
+        --msp-13: 194.62rem;
+        --msp-12: 129.746rem;
+        --msp-11: 86.498rem;
+        --msp-10: 57.665rem;
+        --msp-9: 38.443rem;
+        --msp-8: 25.629rem;
+        --msp-7: 17.086rem;
+        --msp-6: 11.391rem;
+        --msp-5: 7.594rem;
+        --msp-4: 5.063rem;
+        --msp-3: 3.375rem;
+        --msp-2: 2.25rem;
+        --msp-1: 1.5rem;
+        --msp-0: 1rem;
+        --msp-m1: 0.667rem;
+        --msp-m2: 0.444rem;
+        --msp-m3: 0.296rem;
+        --msp-m4: 0.198rem;
+        --msp-m5: 0.132rem;
+        --msp-m6: 0.088rem;
+}
+
+.theme_msc_major-third {
+        --msc-16: 35.527rem;
+        --msc-15: 28.422rem;
+        --msc-14: 22.737rem;
+        --msc-13: 18.19rem;
+        --msc-12: 14.552rem;
+        --msc-11: 11.642rem;
+        --msc-10: 9.313rem;
+        --msc-9: 7.451rem;
+        --msc-8: 5.96rem;
+        --msc-7: 4.768rem;
+        --msc-6: 3.815rem;
+        --msc-5: 3.052rem;
+        --msc-4: 2.441rem;
+        --msc-3: 1.953rem;
+        --msc-2: 1.563rem;
+        --msc-1: 1.25rem;
+        --msc-0: 1rem;
+        --msc-m1: 0.8rem;
+        --msc-m2: 0.64rem;
+        --msc-m3: 0.512rem;
+        --msc-m4: 0.41rem;
+        --msc-m5: 0.328rem;
+        --msc-m6: 0.262rem;
+}
+
+.theme_color_light {
+        --color-primary: #bdbdbd;
+        --color-primary-light: #efefef;
+        --color-primary-dark: #8d8d8d;
+
+        --color-secondary: #424242;
+        --color-secondary-light: #6d6d6d;
+        --color-secondary-dark: #1b1b1b;
+
+        --color-background: #ffffff;
+        --color-surface: #ffffff;
+        --color-error: #bb002f;
+        --color-success: #009624;
+
+        --color-on-primary: #000000;
+        --color-on-primary-light: #000000;
+        --color-on-primary-dark: #000000;
+
+        --color-on-secondary: #ffffff;
+        --color-on-secondary-light: #ffffff;
+        --color-on-secondary-dark: #ffffff;
+
+        --color-on-background: #000000;
+        --color-on-surface: #000000;
+        --color-on-error: #ffffff;
+        --color-on-success: #ffffff;
+}
+
+.theme_color_dark {
+        --color-secondary: #fafafa;
+        --color-secondary-light: #ffffff;
+        --color-secondary-dark: #c7c7c7;
+
+        --color-primary: #C4C4C4;
+        --color-primary-light: #E0E0E0;
+        --color-primary-dark: #A1A1A1;
+
+        --color-background: #121212;
+        --color-surface: #121212;
+        --color-error: #FA003E;
+        --color-success: #00B82B;
+
+        --color-on-secondary: #000000;
+        --color-on-secondary-light: #000000;
+        --color-on-secondary-dark: #000000;
+
+        --color-on-primary: #000000;
+        --color-on-primary-light: #000000;
+        --color-on-primary-dark: #000000;
+
+        --color-on-background: #FFFFFF;
+        --color-on-surface: #FFFFFF;
+        --color-on-error: #141414;
+        --color-on-success: #121212;
+}
