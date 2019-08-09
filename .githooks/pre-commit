@@ -1,0 +1,16 @@
+#!/bin/sh
+FILES=$(git diff --cached --name-only --diff-filter=ACM "*.js" "*.css" | sed 's| |\\ |g')
+[ -z "$FILES" ] && exit 0
+
+# run prettier against files in check mode
+# reject if no errors found
+echo "$FILES" | xargs ./node_modules/.bin/prettier --c --loglevel error
+if [ $? != 0 ]; then
+        cat<<\EOF
+Prettier lint check failed, please run prettier
+against changes.
+EOF
+        exit 1
+fi
+
+exit 0

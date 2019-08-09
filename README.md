@@ -12,6 +12,12 @@ can be found at packages/<mokui-component-name>
 scripts
 --------------------------------------------------------------------------------
 ```
+sh init-dev-env.sh
+```
+
+initialize dev tooling, basically run this after yarn[npm init]
+
+```
 $ sh add-pkg.sh <pkg-name>
 ```
 
