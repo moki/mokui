@@ -1,36 +1,52 @@
-********************************************************************************
-*                                    mokui                                     *
-********************************************************************************
+mokui
+--------------------------------------------------------------------------------
 ui components monorepo
 
 
-components
+Components
 --------------------------------------------------------------------------------
-individual components can be found at packages/
+individual components and their specifications
+can be found at packages/<mokui-component-name>
 
 
 scripts
 --------------------------------------------------------------------------------
+```
 $ sh add-pkg.sh <pkg-name>
+```
+
 adds package <pkg-name> scaffolds package with provided template
 in the script, includes: package.json and makefile.
 
+```
 $ sh add-com-dep.sh <dependency-name>[@version] [--dev]
+```
+
 adds dependency <dependency-name> to each repository with lerna,
 --dev flag adds dev dependency to the yarn workspace.
 
+```
 $ sh add-sib-dep.sh <source-package> <target-package>
+```
+
 adds package <source-package> as sibling dependency to the
 package <target-package> with lerna, updates package.json
 of the package <target-package>.
 
+```
 $ sh rm-com-dep.sh <dependency-name>
+```
 removes dependency <dependency-name> of each repository with lerna.
 
+```
 $ sh publish.sh
+```
 publish with lerna
 
+```
 $ yarn/npm build
+```
+
 runs build script on each package in the repository
 
 
