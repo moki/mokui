@@ -18,6 +18,7 @@ LICENSE="BSD-3-Clause"
 VER="0.0.0"
 PKG=$1
 # ORG=$2
+ACCESS=public
 NAMESPACE=mokui
 ORG=moki.codes
 
@@ -37,6 +38,9 @@ cat -u >> package.json << EOF
     "type": "git",
     "url": "$REPO",
     "directory": "packages/$NAMESPACE-$PKG"
+  },
+  "publishConfig": {
+    "access": "$ACCESS"
   },
   "author": "$AUTHOR",
   "license": "$LICENSE",
