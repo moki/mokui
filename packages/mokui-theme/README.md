@@ -61,5 +61,3 @@ Modificators
 |             |               |   --color-on-surface                           |
 |             |               |   --color-on-error                             |
 |             |               |   --color-on-success                           |
-| header      | default       | sets header height to default which is auto    |
-| footer      | default       | sets footer height to default which is auto    |
