@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@0.1.2...@moki.codes/mokui-theme@1.0.0) (2019-08-11)
+
+
+### Bug Fixes
+
+* **theme:** take out header, footer modificators ([7ac53ca](https://github.com/moki/mokui/commit/7ac53ca))
+
+
+### BREAKING CHANGES
+
+* **theme:** header and footer modificators no longer available
+at the theme level moving to the layout block as an individual
+elements modificators.
+
+
+
+
+
 ## [0.1.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@0.1.1...@moki.codes/mokui-theme@0.1.2) (2019-08-09)
 
 **Note:** Version bump only for package @moki.codes/mokui-theme
