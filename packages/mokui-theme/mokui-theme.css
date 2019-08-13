@@ -21,7 +21,7 @@ html {
         font-size: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 766px) {
         html {
                 font-size: 112.5%;
         }
@@ -36,9 +36,10 @@ html {
 
 /* breakpoints */
 .theme_breakpoint_default {
-        --screen-m: 768px;
-        --screen-l: 992px;
-        --screen-xl: 1200px;
+        --screen-s: 480px;
+        --screen-m: 766px;
+        --screen-l: 990px;
+        --screen-xl: 1194px;
 }
 
 /* gap */
