@@ -1,0 +1,27 @@
+{
+  "name": "@moki.codes/mokui-layout",
+  "version": "0.0.0",
+  "description": "layout web ui component",
+  "keywords": [
+    "component",
+    "layout",
+    "web",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-layout"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "dev": "parcel mokui-layout-demo.html"
+  },
+  "dependencies": {
+    "@moki.codes/mokui-theme": "^1.0.0"
+  }
+}
