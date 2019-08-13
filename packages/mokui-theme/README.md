@@ -19,9 +19,10 @@ Modificators
 | breakpoint  | default       | defines default screen breakpoints,            |
 |             |               | althought some are still hardcoded due         |
 |             |               | to native css limitations                      |
-|             |               |   --screen-m: 768px;                           |
-|             |               |   --screen-l: 992px;                           |
-|             |               |   --screen-xl: 1200px;                         |
+|             |               |   --screen-s: 480px;                           |
+|             |               |   --screen-m: 766px;                           |
+|             |               |   --screen-l: 990px;                           |
+|             |               |   --screen-xl: 1194px;                         |
 | msp         | perfect-fifth | defines perfect fifth as a primary             |
 |             |               | modular scale                                  |
 | msc         | major-third   | defines major third as a complimentary         |
