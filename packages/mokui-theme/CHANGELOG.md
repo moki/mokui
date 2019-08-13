@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.0.0...@moki.codes/mokui-theme@1.0.1) (2019-08-13)
+
+
+### Bug Fixes
+
+* **theme:** adequate default breakpoints. ([6b0555a](https://github.com/moki/mokui/commit/6b0555a))
+
+
+
+
+
 # [1.0.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@0.1.2...@moki.codes/mokui-theme@1.0.0) (2019-08-11)
 
 
