@@ -155,3 +155,11 @@ html {
         --color-on-error: #141414;
         --color-on-success: #121212;
 }
+
+.theme_grid-columns_default {
+        --grid-columns-xs: 4;
+        --grid-columns-s: 8;
+        --grid-columns-m: 8;
+        --grid-columns-l: 12;
+        --grid-columns-xl: 12;
+}

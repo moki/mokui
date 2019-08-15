@@ -62,3 +62,9 @@ Modificators
 |             |               |   --color-on-surface                           |
 |             |               |   --color-on-error                             |
 |             |               |   --color-on-success                           |
+| grid-       | default       | sets grid columns variables used inside grid   |
+| columns     |               | --grid-columns-xs: 4                           |
+|             |               | --grid-columns-s: 8                            |
+|             |               | --grid-columns-m: 8                            |
+|             |               | --grid-columns-l: 12                           |
+|             |               | --grid-columns-xl: 12                          |
