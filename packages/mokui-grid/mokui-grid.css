@@ -1,0 +1,61 @@
+.grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(var(--grid-cols-xs), 1fr);
+}
+
+@media screen and (min-width: 480px) {
+        .grid {
+                grid-template-columns: repeat(var(--grid-cols-s), 1fr);
+        }
+}
+
+@media screen and (min-width: 766px) {
+        .grid {
+                grid-template-columns: repeat(var(--grid-cols-m), 1fr);
+        }
+}
+
+@media screen and (min-width: 990px) {
+        .grid {
+                grid-template-columns: repeat(var(--grid-cols-l), 1fr);
+        }
+}
+
+@media screen and (min-width: 1194px) {
+        .grid {
+                grid-template-columns: repeat(var(--grid-cols-xl), 1fr);
+        }
+}
+
+.grid_col-gap_none {
+        grid-column-gap: none;
+}
+
+.grid_col-gap_half {
+        grid-column-gap: calc(var(--gap) / 2);
+}
+
+.grid_col-gap_default {
+        grid-column-gap: var(--gap);
+}
+
+.grid_col-gap_double {
+        grid-column-gap: calc(var(--gap) * 2);
+}
+
+.grid_row-gap_none {
+        grid-row-gap: none;
+}
+
+.grid_row-gap_half {
+        grid-row-gap: calc(var(--gap) / 2);
+}
+
+.grid_row-gap_default {
+        grid-row-gap: var(--gap);
+}
+
+.grid_row-gap_double {
+        grid-row-gap: calc(var(--gap) * 2);
+}
