@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+        padding: 0;
+        margin: 0;
+}
+
+p + p {
+        text-indent: var(--msc-0);
+}
+
+.text {
+        line-height: var(--msp-1);
+}
+
+.text_length_s {
+        max-width: var(--msp-8);
+        padding-right: var(--msp-6);
+}
+
+.text_length_m {
+        max-width: var(--msp-8);
+}
+
+.text_align_left {
+        text-align: left;
+}
+
+.text_align_center {
+        text-align: center;
+}
+
+.text_align_right {
+        text-align: right;
+}
+
+.text_size_2xs {
+        font-size: var(--msc-m3);
+}
+
+.text_size_xs {
+        font-size: var(--msc-m2);
+}
+
+.text_size_s {
+        font-size: var(--msc-m1);
+}
+
+.text_size_m {
+        font-size: var(--msc-0);
+}
+
+.text_size_l {
+        font-size: var(--msc-1);
+}
+
+.text_size_xl {
+        font-size: var(--msc-2);
+}
+
+.text_size_2xl {
+        line-height: calc(var(--msp-1) * 1.5);
+        font-size: var(--msc-3);
+        letter-spacing: calc(var(--msc-3) * -0.03);
+}
+
+.text_size_3xl {
+        line-height: calc(var(--msp-1) * 2);
+        font-size: var(--msc-4);
+        letter-spacing: calc(var(--msc-4) * -0.05);
+}
+
+.text_size_4xl {
+        line-height: calc(var(--msp-1) * 2);
+        font-size: var(--msc-5);
+        letter-spacing: calc(var(--msc-5) * -0.03);
+}
+
+.text_weight_light {
+        font-weight: 300;
+}
+
+.text_weight_regular {
+        font-weight: 400;
+}
+
+.text_weight_medium {
+        font-weight: 500;
+}
+
+.text_style_small-caps {
+        font-variant-caps: all-small-caps;
+        -moz-font-feature-settings: "c2sc", "smcp";
+        -webkit-font-feature-settings: "c2sc", "smcp";
+        font-feature-settings: "c2sc", "smcp";
+        letter-spacing: calc(var(--msc-m1) / 10);
+}
