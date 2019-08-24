@@ -1,0 +1,29 @@
+.animation {
+        --animation-fn-deceleration-1: 0;
+        --animation-fn-deceleration-2: 0;
+        --animation-fn-deceleration-3: 0.2;
+        --animation-fn-deceleration-4: 1;
+
+        --animation-fn-standard-1: 0.4;
+        --animation-fn-standard-2: 0;
+        --animation-fn-standard-3: 0.2;
+        --animation-fn-standard-4: 1;
+
+        --animation-fn-acceleration-1: 0.4;
+        --animation-fn-acceleration-2: 0;
+        --animation-fn-acceleration-3: 1;
+        --animation-fn-acceleration-4: 1;
+
+        --animation-fn-sharp-1: 0.4;
+        --animation-fn-sharp-2: 0;
+        --animation-fn-sharp-3: 0.6;
+        --animation-fn-sharp-4: 1;
+
+        --animation-duration-xs: 0.075s;
+        --animation-duration-s: 0.1s;
+        --animation-duration-m: 0.15s;
+        --animation-duration-l: 0.2s;
+        --animation-duration-xl: 0.25s;
+        --animation-duration-2xl: 0.3s;
+        --animation-duration-3xl: 0.5s;
+}
