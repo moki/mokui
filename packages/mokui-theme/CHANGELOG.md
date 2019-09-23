@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.1.0...@moki.codes/mokui-theme@1.2.0) (2019-09-23)
+
+
+### Features
+
+* **theme:** css resets ([01212a8](https://github.com/moki/mokui/commit/01212a8))
+
+
+
+
+
 # [1.1.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.0.1...@moki.codes/mokui-theme@1.1.0) (2019-08-15)
 
 

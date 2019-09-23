@@ -1,6 +1,6 @@
 {
   "name": "@moki.codes/mokui-layout",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "layout web ui component",
   "keywords": [
     "component",
@@ -22,6 +22,6 @@
     "dev": "parcel mokui-layout-demo.html"
   },
   "dependencies": {
-    "@moki.codes/mokui-theme": "^1.1.0"
+    "@moki.codes/mokui-theme": "^1.2.0"
   }
 }
