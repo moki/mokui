@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/moki/mokui/compare/@moki.codes/mokui-layout@0.1.3...@moki.codes/mokui-layout@0.1.4) (2019-09-23)
+
+
+### Bug Fixes
+
+* **layout:** fluid container width ([bffc61d](https://github.com/moki/mokui/commit/bffc61d))
+
+
+
+
+
 ## [0.1.3](https://github.com/moki/mokui/compare/@moki.codes/mokui-layout@0.1.2...@moki.codes/mokui-layout@0.1.3) (2019-09-23)
 
 **Note:** Version bump only for package @moki.codes/mokui-layout
