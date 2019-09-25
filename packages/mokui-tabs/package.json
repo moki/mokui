@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-tabs",
   "version": "0.1.0",
-  "description": "tabs",
+  "description": "tabs web ui component",
   "keywords": [
     "component",
     "tabs",
@@ -19,11 +19,8 @@
   },
   "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
   "license": "BSD-3-Clause",
-  "main": "dist/mokui.tabs.js",
-  "module": "index.js",
   "scripts": {
-    "dev": "parcel mokui-tabs-demo.html",
-    "build": "parcel build index.js"
+    "dev": "parcel mokui-tabs-demo.html"
   },
   "dependencies": {
     "@moki.codes/mokui-animation": "^0.1.0",
