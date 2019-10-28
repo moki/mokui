@@ -1,0 +1,1 @@
+import "./mokui-tabs.css";

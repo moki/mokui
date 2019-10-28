@@ -1,65 +1,99 @@
-Layout
+layout
 --------------------------------------------------------------------------------
 
 Description
 --------------------------------------------------------------------------------
-Layout is the top most wrapper for a page content after theme or on the same
-level.
-Layout defines variables:
+Layout block provides subsystem with the top most wrapper for a page content
+layout after theme or on the same level, essential child elements:
+header, main, footer. Other two elements are container and container-fluid.
+All of the elements behavior described in their appropriate section.
 
-* --layout-min-width: 320px;
-* --layout-min-height: auto;
+Installation
+--------------------------------------------------------------------------------
+```
+yarn add @moki.codes/mokui-layout
+```
 
-which defines default minimal width and height of the layout.
+Styles
+--------------------------------------------------------------------------------
+```
+@import "@moki.codes/mokui-layout/dist/mokui-layout.css"
+```
+
+Basic Usage
+--------------------------------------------------------------------------------
+```
+...
+<body class="layout
+             layout_type_holy-grail"
+>
+        <header class="layout__header">
+                <div class="layout__container-fluid>
+                        full width content but gaps
+                </div>
+        </header>
+        <main class="layout__main">
+                <div class="layout__container">
+                        responsive, centered content
+                </div>
+        </main>
+        <footer class="layout__footer"></footer>
+</body>
+...
+```
 
 Modificators
 --------------------------------------------------------------------------------
 | name        | value         | description                                    |
 | ----------- | ------------- | ---------------------------------------------- |
-| type        | holy-grail    | establishes holy grail layout,                 |
-|             |               | layout is stretched 100vh, with dropped footer |
+| type        | holy-grail    | establishes holy grail layout,  layout min     |
+|             |               | height is stretched 100vh, with dropped footer |
 |             |               | as a default behavior                          |
+
+Variables
+--------------------------------------------------------------------------------
+layout defines variables
+
+* --layout-min-width
+  - minimal width layout shrinks default: 320px
+* --layout-min-height: auto;
+  - layout minimum height
+* --layout-header-height
+  - header height inside the layout defaults to --msp-1 * 3,
+    override to change appearance
+* --layout-footer-height
+  - footer height inside the layout default to auto,
+    override to change appearance
 
 Elements
 --------------------------------------------------------------------------------
-* Header
-* Main
-* Footer
-* Container
+* header
+* main
+* footer
+* container
+* container-fluid
 
-Header
+header
 --------------------------------------------------------------------------------
-Layout's header element
+layout's header element, height controlled by layout's --layout-header-height
 
-Modificators
+main
 --------------------------------------------------------------------------------
-| name        | value         | description                                    |
-| ----------- | ------------- | ---------------------------------------------- |
-| height      | default       | sets header height in the grid layout as auto  |
-|             |               | defines variable: --layout-header-height: auto |
+layout's main element, only purpose is to place element inside grid markup as
+a main content element
 
-Footer
+footer
 --------------------------------------------------------------------------------
-Layout's footer element
+layout's footer element, height controlled by layout's --layout-footer-height
 
-Modificators
+container
 --------------------------------------------------------------------------------
-| name        | value         | description                                    |
-| ----------- | ------------- | ---------------------------------------------- |
-| height      | default       | sets footer height in the grid layout as auto  |
-|             |               | defines variable: --layout-footer-height: auto |
+layout's container element. Centers content in the layout, responsive, relies
+on the breakpoints set inside the theme(-screen-\<s,m,l,xl\>).
+On each breakpoint stays at the max-width of the breakpoint
+with 2 (--gap)'s subtracted.
 
-Container
+container-fluid
 --------------------------------------------------------------------------------
-Layout's container element. Centers content in the layout, responsive, relies
-on the breakpoints set inside the theme. Also has fluid behavior. On each
-breakpoint stays at the max-width of the breakpoint with 2 --gap s subtracted.
-
-Modificators
---------------------------------------------------------------------------------
-
-| name        | value         | description                                    |
-| ----------- | ------------- | ---------------------------------------------- |
-| fluid       |               | takes almost full width of the viewport        |
-|             |               | almost being margin on the size --gap on each  |
-|             |               | side.                                          |
+layout's fluid container element.
+takes 100% of available width but (--gap) on each side

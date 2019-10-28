@@ -1,13 +1,9 @@
-Grid
+grid
 --------------------------------------------------------------------------------
-
-Elements
---------------------------------------------------------------------------------
-Cell
 
 Description
 --------------------------------------------------------------------------------
-Grid default behavior is to define grid with cells according to the screen size.
+grid default behavior is to define grid with cells according to the screen size.
 Take note that screen-* hardcoded in the media queries due to the native css
 limitations.
 
@@ -19,7 +15,39 @@ limitations.
 | >= screen-l  | --grid-columns-l  |
 | >= screen-xl | --grid-columns-xl |
 
---grid-columns-* defined at the theme level override to change behavior
+Installation
+--------------------------------------------------------------------------------
+```
+yarn add @moki.codes/mokui-grid
+```
+
+Styles
+--------------------------------------------------------------------------------
+```
+@import "@moki.codes/mokui-grid/dist/mokui-grid.css"
+```
+
+Basic Usage
+--------------------------------------------------------------------------------
+```
+<div class="theme theme_grid-columns_default">
+        <div class="grid grid_col-gap_none grid_row-gap_none">
+                <div class="grid__cell">cell 1</div>
+                <div class="grid__cell">cell 2</div>
+                <div class="grid__cell">cell 3</div>
+                <div class="grid__cell">cell 4</div>
+        </div>
+</div>
+```
+
+Variables
+--------------------------------------------------------------------------------
+makes usage of the variables defined at the theme level,
+override to alter behavior
+
+* --grid-columns-*
+
+* --gap
 
 Modificators
 --------------------------------------------------------------------------------

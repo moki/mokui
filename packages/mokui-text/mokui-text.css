@@ -1,14 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-        padding: 0;
-        margin: 0;
-}
-
 p + p {
         text-indent: var(--msc-0);
 }
@@ -63,21 +52,21 @@ p + p {
 }
 
 .text_size_2xl {
+        letter-spacing: calc(var(--msc-3) * -0.03);
         line-height: calc(var(--msp-1) * 1.5);
         font-size: var(--msc-3);
-        letter-spacing: calc(var(--msc-3) * -0.03);
 }
 
 .text_size_3xl {
+        letter-spacing: calc(var(--msc-4) * -0.05);
         line-height: calc(var(--msp-1) * 2);
         font-size: var(--msc-4);
-        letter-spacing: calc(var(--msc-4) * -0.05);
 }
 
 .text_size_4xl {
+        letter-spacing: calc(var(--msc-5) * -0.03);
         line-height: calc(var(--msp-1) * 2);
         font-size: var(--msc-5);
-        letter-spacing: calc(var(--msc-5) * -0.03);
 }
 
 .text_weight_light {
@@ -93,9 +82,9 @@ p + p {
 }
 
 .text_style_small-caps {
-        font-variant-caps: all-small-caps;
-        -moz-font-feature-settings: "c2sc", "smcp";
         -webkit-font-feature-settings: "c2sc", "smcp";
+        -moz-font-feature-settings: "c2sc", "smcp";
         font-feature-settings: "c2sc", "smcp";
         letter-spacing: calc(var(--msc-m1) / 10);
+        font-variant-caps: all-small-caps;
 }
