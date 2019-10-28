@@ -14,6 +14,7 @@
         justify-content: center;
         flex: 1 0 0;
 
+        opacity: 0.6;
         transform: translateZ(0);
         transition: opacity var(--animation-duration-m)
                 cubic-bezier(
@@ -22,13 +23,39 @@
                         var(--animation-fn-sharp-3),
                         var(--animation-fn-sharp-4)
                 );
-        opacity: 0.6;
 
         padding: calc(var(--msp-1) / 2) var(--msp-1);
 
         cursor: pointer;
 
         color: var(--color-on-background);
+
+        line-height: var(--msp-1);
+
+        user-select: none;
+}
+
+.tab:before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        opacity: 0;
+        transform: translateZ(0);
+        transition: opacity var(--animation-duration-m)
+                cubic-bezier(
+                        var(--animation-fn-sharp-1),
+                        var(--animation-fn-sharp-2),
+                        var(--animation-fn-sharp-3),
+                        var(--animation-fn-sharp-4)
+                );
+
+        height: var(--msp-m5);
+        width: 100%;
+
+        background-color: var(--color-on-primary);
 }
 
 .tab:hover {
@@ -57,16 +84,5 @@
 }
 
 .tab_active:before {
-        content: "";
-
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
         opacity: 0.9;
-
-        height: var(--msp-m5);
-        width: 100%;
-
-        background-color: var(--color-on-primary);
 }

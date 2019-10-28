@@ -1,19 +1,42 @@
 {
   "name": "mokui",
-  "description": "moki ui components",
-  "private": true,
+  "description": "moki web ui components",
   "workspaces": [
     "packages/*"
   ],
-  "repository": "git@github.com:moki/mokui.git",
-  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
   "license": "BSD-3-Clause",
-  "devDependencies": {
-    "lerna": "^3.16.4",
-    "parcel-bundler": "^1.12.3",
-    "prettier": "^1.18.2"
-  },
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "repository": "git@github.com:moki/mokui.git",
   "scripts": {
-    "build": "lerna run build --stream"
-  }
+    "prepublishOnly": "yarn build:packages",
+    "build:packages": "yarn clean:packages && NODE_ENV=production lerna exec --parallel -- rollup --config ../../rollup.config.js",
+    "clean:packages": "lerna exec --parallel --stream -- rm -rf dist/",
+    "build:dev": "yarn clean:dev && NODE_ENV=development rollup --config ./rollup.config.js --watch",
+    "clean:dev": "rm -rf stories/dist/*.js stories/dist/*.css",
+    "add-sibling:packages": "node scripts/add-sibling-dependency.js",
+    "add:packages": "lerna add",
+    "remove:packages": "lerna exec --stream --parallel yarn remove",
+    "new:packages": "node scripts/new-package.js",
+    "publish:packages": "lerna publish",
+    "run:packages": "lerna exec --stream --parallel"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
+    "@typescript-eslint/parser": "^2.3.3",
+    "autoprefixer": "^9.6.4",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "lerna": "^3.16.4",
+    "prettier": "^1.18.2",
+    "rollup": "^1.23.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "^3.6.4"
+  },
+  "private": true
 }

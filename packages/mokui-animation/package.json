@@ -1,12 +1,17 @@
 {
   "name": "@moki.codes/mokui-animation",
+  "description": "animation web ui subsystem",
   "version": "0.1.0",
-  "description": "animation subsystem",
   "keywords": [
     "animation",
     "subsystem",
     "web",
     "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "files": [
+    "/dist/mokui-animation.css"
   ],
   "repository": {
     "type": "git",
@@ -15,10 +20,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
-  "license": "BSD-3-Clause",
-  "scripts": {
-    "dev": "parcel mokui-animation-demo.html"
   }
 }

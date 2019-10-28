@@ -1,13 +1,18 @@
 {
   "name": "@moki.codes/mokui-elevation",
+  "description": "elevation shadow web ui subsystem",
   "version": "0.1.0",
-  "description": "elevation shadow subsystem",
   "keywords": [
     "elevation",
     "subsystem",
     "shadow",
     "web",
     "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "files": [
+    "/dist/mokui-elevation.css"
   ],
   "repository": {
     "type": "git",
@@ -16,10 +21,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
-  "license": "BSD-3-Clause",
-  "scripts": {
-    "dev": "parcel mokui-elevation-demo.html"
   }
 }

@@ -2,61 +2,101 @@ mokui
 --------------------------------------------------------------------------------
 ui components monorepo
 
-
 Components
 --------------------------------------------------------------------------------
 individual components and their specifications
-can be found at packages/<mokui-component-name>
+can be found at `packages/<mokui-component_name>`
 
+Stories
+--------------------------------------------------------------------------------
+stories featuring components can be found at `stories/`
 
-scripts
+Scripts
 --------------------------------------------------------------------------------
 ```
-sh init-dev-env.sh
+$ sh init-dev-env.sh
 ```
 
-initialize dev tooling, basically run this after yarn[npm init]
+initializes dev tooling, basically run this after yarn[npm init]
+(.githooks).
 
 ```
-$ sh add-pkg.sh <pkg-name>
+$ yarn new:packages <package_name>
 ```
 
-adds package <pkg-name> scaffolds package with provided template
-in the script, includes: package.json and makefile.
+creates new package <package_name> scaffolds its structure.
 
 ```
-$ sh add-com-dep.sh <dependency-name>[@version] [--dev]
+$ yarn add <dependencies...>[@version] --dev -W
 ```
 
-adds dependency <dependency-name> to each repository with lerna,
---dev flag adds dev dependency to the yarn workspace.
+adds development dependency(ies) common to (the yarn workspace)
+all packages inside the monoreo.
 
 ```
-$ sh add-sib-dep.sh <source-package> <target-package>
+$ yarn add:packages <dependency>[@version]
 ```
 
-adds package <source-package> as sibling dependency to the
-package <target-package> with lerna, updates package.json
-of the package <target-package>.
+adds dependency common to all packages inside the monoreo.
 
 ```
-$ sh rm-com-dep.sh <dependency-name>
-```
-removes dependency <dependency-name> of each repository with lerna.
-
-```
-$ sh publish.sh
-```
-publish with lerna
-
-```
-$ yarn/npm build
+$ yarn remove:packages <dependencies...>
 ```
 
-runs build script on each package in the repository
+removes dependencies from all monorepo packages.
 
+```
+$ yarn add-sibling:packages <dependency> <dependee>
+```
 
-license
+adds <dependency> package as a dependency to the <dependee> package.
+
+```
+$ yarn publish:packages
+```
+
+publishes packages with lerna.
+
+```
+$ yarn build:packages
+```
+
+cleans previous builds and makes production build of each package.
+
+```
+$ yarn run:packages <command> [arguments...]
+```
+
+runs command <commmand> with arguments [arguments...]
+against each package inside the monorepo.
+
+```
+$ yarn build:dev
+```
+
+cleans previous builds and builds stories development playground
+in the watch mode.
+stories/
+
+```
+$ yarn clean:packages
+```
+
+cleans production build of each package inside monorepo.
+
+```
+$ yarn clean:dev
+```
+
+cleans previous stories development playground builds.
+
+```
+$ yarn prepublishOnly
+```
+
+prepares packages for publishing.
+
+License
 --------------------------------------------------------------------------------
 BSD 3-Clause License
 

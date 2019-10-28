@@ -44,9 +44,10 @@ textarea {
 }
 
 button {
+        padding: 0;
+
         outline: none;
         border: none;
-        padding: 0;
 
         background: none;
         cursor: pointer;

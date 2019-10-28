@@ -1,12 +1,17 @@
 {
   "name": "@moki.codes/mokui-theme",
+  "description": "theme web ui subsystem",
   "version": "1.2.0",
-  "description": "theme web ui component",
   "keywords": [
-    "component",
+    "subsystem",
     "theme",
     "web",
     "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "files": [
+    "/dist/mokui-theme.css"
   ],
   "repository": {
     "type": "git",
@@ -15,7 +20,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
-  "license": "BSD-3-Clause"
+  }
 }

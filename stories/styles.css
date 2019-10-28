@@ -1,0 +1,11 @@
+.placeholder-brand {
+        width: calc(var(--msp-1) * 4);
+        height: var(--msp-1);
+        line-height: var(--msp-1);
+
+        background-color: var(--color-on-background);
+}
+
+.item {
+        font-size: 0.75rem;
+}
