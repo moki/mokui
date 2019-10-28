@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-elevation",
   "description": "elevation shadow web ui subsystem",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "elevation",
     "subsystem",
