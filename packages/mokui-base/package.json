@@ -1,0 +1,26 @@
+{
+  "name": "@moki.codes/mokui-base",
+  "description": "base web ui component core functionality",
+  "version": "0.0.0",
+  "keywords": [
+    "component",
+    "base",
+    "web",
+    "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "main": "dist/cjs/mokui-base.js",
+  "module": "dist/esm/mokui-base.js",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-base"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

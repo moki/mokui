@@ -6,6 +6,15 @@
         background-color: var(--color-on-background);
 }
 
-.item {
-        font-size: 0.75rem;
+.i {
+        line-height: var(--msp-1);
+        font-size: var(--msc-m1);
+        font-weight: 500;
+        font-feature-settings: "c2sc", "smcp";
+        letter-spacing: calc(var(--msc-m1) / 10);
+        font-variant-caps: all-small-caps;
+}
+
+.test {
+        --layout-header-height: calc(var(--msp-1) * 2);
 }
