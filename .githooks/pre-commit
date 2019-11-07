@@ -1,10 +1,10 @@
 #!/bin/sh
-SCRIPTS=$(git diff --cached --name-only --diff-filter=ACM "*.ts" "*.js" "*.css" | sed 's| |\\ |g')
-[ -z "$SCRIPTS" ] && exit 0
+SCRIPTS_STYLES=$(git diff --cached --name-only --diff-filter=ACM "*.ts" "*.js" "*.css" | sed 's| |\\ |g')
+[ -z "$SCRIPTS_STYLES" ] && exit 0
 
 # run prettier against files in check mode
 # reject in case of errors
-echo "$SCRIPTS" | xargs ./node_modules/.bin/prettier --c --loglevel error
+echo "$SCRIPTS_STYLES" | xargs ./node_modules/.bin/prettier --c --loglevel error
 if [ $? != 0 ]; then
         cat<<\EOF
 Prettier lint check failed, please run prettier
@@ -13,12 +13,12 @@ EOF
         exit 1
 fi
 
-STYLES=$(git diff --cached --name-only --diff-filter=ACM "*.css" | sed 's| |\\ |g')
-[ -z "$STYLES" ] && exit 0
+SCRIPTS=$(git diff --cached --name-only --diff-filter=ACM "*.ts" "*.js" | sed 's| |\\ |g')
+[ -z "$SCRIPTS" ] && exit 0
 
 # run eslint against files
 # reject in case of errors
-echo "$STYLES" | xargs ./node_modules/.bin/eslint
+echo "$SCRIPTS" | xargs ./node_modules/.bin/eslint
 if [ $? != 0 ]; then
 	cat<<\EOF
 ESLint check failed, please run eslint against changes.
