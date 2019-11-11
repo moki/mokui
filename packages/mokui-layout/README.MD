@@ -46,9 +46,15 @@ Modificators
 --------------------------------------------------------------------------------
 | name        | value         | description                                    |
 | ----------- | ------------- | ---------------------------------------------- |
-| type        | holy-grail    | establishes holy grail layout,  layout min     |
-|             |               | height is stretched 100vh, with dropped footer |
-|             |               | as a default behavior                          |
+| type        | holy-grail    | establishes full holy grail layout, aside left |
+|             |               | aside right included. layout stretched full    |
+|             |               | viewport height, dropped footer by default     |
+| type        | holy-grail-   | holy grail with main and left aside            |
+|             | asleft        |                                                |
+| type        | holy-grail-   | holy grail with main and right aside           |
+|             | asright       |                                                |
+| type        | holy-grail-   | holy grail with main only                      |
+|             | main          |                                                |
 
 Variables
 --------------------------------------------------------------------------------
@@ -68,7 +74,9 @@ layout defines variables
 Elements
 --------------------------------------------------------------------------------
 * header
+* aside-left
 * main
+* aside-right
 * footer
 * container
 * container-fluid
@@ -77,10 +85,18 @@ header
 --------------------------------------------------------------------------------
 layout's header element, height controlled by layout's --layout-header-height
 
+aside-left
+--------------------------------------------------------------------------------
+left aside element
+
 main
 --------------------------------------------------------------------------------
 layout's main element, only purpose is to place element inside grid markup as
 a main content element
+
+aside-right
+--------------------------------------------------------------------------------
+right aside element
 
 footer
 --------------------------------------------------------------------------------
