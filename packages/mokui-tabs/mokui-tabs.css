@@ -1,4 +1,6 @@
 .tabs {
+        --tab-height: calc(var(--msp-1) * 2);
+
         display: flex;
         flex: 1 0 auto;
         flex-wrap: wrap;
@@ -16,6 +18,7 @@
 
         opacity: 0.6;
         transform: translateZ(0);
+
         transition: opacity var(--animation-duration-m)
                 cubic-bezier(
                         var(--animation-fn-sharp-1),
@@ -24,7 +27,7 @@
                         var(--animation-fn-sharp-4)
                 );
 
-        padding: calc(var(--msp-1) / 2) var(--msp-1);
+        height: var(--tab-height);
 
         cursor: pointer;
 
@@ -44,6 +47,7 @@
 
         opacity: 0;
         transform: translateZ(0);
+
         transition: opacity var(--animation-duration-m)
                 cubic-bezier(
                         var(--animation-fn-sharp-1),
