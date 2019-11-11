@@ -55,6 +55,8 @@ Modificators
 |             | asright       |                                                |
 | type        | holy-grail-   | holy grail with main only                      |
 |             | main          |                                                |
+| header      | dense         | set header height to dense, sets               |
+|             |               | --layout-header-height to --msp-1 * 2          |
 
 Variables
 --------------------------------------------------------------------------------

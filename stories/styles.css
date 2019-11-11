@@ -14,7 +14,3 @@
         letter-spacing: calc(var(--msc-m1) / 10);
         font-variant-caps: all-small-caps;
 }
-
-.test {
-        --layout-header-height: calc(var(--msp-1) * 2);
-}

@@ -9,6 +9,10 @@
         min-width: var(--layout-min-width);
 }
 
+.layout_header_dense {
+        --layout-header-height: calc(var(--msp-1) * 2);
+}
+
 .layout_type_holy-grail {
         --layout-min-height: 100vh;
 
