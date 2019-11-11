@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-layout",
   "description": "layout web ui subsystem",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "subsystem",
     "layout",
