@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.2.0...@moki.codes/mokui-tabs@0.3.0) (2019-11-11)
+
+
+### Features
+
+* **tabs:** remove padding, add height variable ([cf4d454](https://github.com/moki/mokui/commit/cf4d454))
+
+
+
+
+
 # [0.2.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.1.1...@moki.codes/mokui-tabs@0.2.0) (2019-10-28)
 
 
