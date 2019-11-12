@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.3.0...@moki.codes/mokui-tabs@0.4.0) (2019-11-12)
+
+
+### Features
+
+* **tabs:** tune backdrop, underline opacity ([54d62e7](https://github.com/moki/mokui/commit/54d62e7))
+
+
+
+
+
 # [0.3.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.2.0...@moki.codes/mokui-tabs@0.3.0) (2019-11-11)
 
 
