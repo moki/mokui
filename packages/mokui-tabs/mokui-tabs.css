@@ -69,7 +69,7 @@
 }
 
 .tab:hover:after {
-        opacity: 0.04;
+        opacity: 0.12;
 }
 
 .tab:after {
@@ -89,4 +89,8 @@
 
 .tab_active:before {
         opacity: 0.9;
+}
+
+.tab_active:hover:before {
+        opacity: 0.6;
 }
