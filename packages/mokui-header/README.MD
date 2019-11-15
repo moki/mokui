@@ -3,7 +3,7 @@ header
 
 Description
 --------------------------------------------------------------------------------
-header block provides header component inside the holygrail layout.
+header block provides header component inside the holygrail layout
 
 Installation
 --------------------------------------------------------------------------------
@@ -133,3 +133,93 @@ level) or above and hidden otherwise
 navigation-item
 --------------------------------------------------------------------------------
 headers navigation menu item(s) floats left
+
+Javascript
+--------------------------------------------------------------------------------
+
+Basic Usage
+--------------------------------------------------------------------------------
+```
+import { Header } from "@moki.codes/mokui-header";
+
+const headerElement = document.querySelector("header");
+const header = Header(headerElement);
+
+/* when done */
+header.destroy();
+```
+
+Exports
+--------------------------------------------------------------------------------
+* `Header`
+* `HeaderComponent`
+* `HeaderAdapter`
+* `classes`
+* `strings`
+
+Header
+--------------------------------------------------------------------------------
+`(element: Elements): HeaderComponent<HeaderAdapter<Emitter<Component<{}>>>>`
+
+Header factory is a composition of the HeaderComponent, HeaderAdapter,
+Emitter, Component.
+
+HeaderComponent
+--------------------------------------------------------------------------------
+`<T extends HeaderAdapter<Emitter<Component>>>(
+          o: T = {} as T
+): HeaderComponent<T>`
+
+Header Component factory provides core header functionality
+
+Methods
+--------------------------------------------------------------------------------
+| name                        | description                                    |
+| --------------------------- | ---------------------------------------------- |
+| setScrollTarget             | set scroll target to the provided EventTarget  |
+| (target: EventTarget): void | `target`                                       |
+| destroy():                  | clean up routine to be called upon deleting    |
+| HeaderComponent<T>;         | component                                      |
+
+HeaderAdapter
+--------------------------------------------------------------------------------
+`<T extends Emitter<Component>>(
+        o: T
+): HeaderAdapter<T>`
+
+Header Adapter factory provides default adapter functionality, one can override
+partially or completely used by HeaderComponent.
+
+Methods
+--------------------------------------------------------------------------------
+| name                        | description                                    |
+| --------------------------- | ---------------------------------------------- |
+| handleActionPrimaryClick()  | handler for the header__action_primary click   |
+| : void                      | event, fires strings.ACTION_PRIMARY_EVENT event|
+| getViewportScrollY(         | returns number of pixels scrolled on scroll    |
+|   targetSelector: symbol    | `targetSelector` target from top of the page   |
+| ): number                   |                                                |
+| getHeaderHeight(): number   | returns height of the root(), (header)         |
+| ): number                   |                                                |
+| hasClass(name: string)      | returns if root(), (header) has class `name`   |
+| : boolean                   |                                                |
+| addClass(name: string)      | adds class `name` to the element root(),       |
+| : void                      | (header)                                       |
+| removeClass(name: string)   | removes class `name` to the element root(),    |
+| : void                      | (header)                                       |
+
+classes
+--------------------------------------------------------------------------------
+| name                        | value                                          |
+| --------------------------- | ---------------------------------------------- |
+| HEADER_HIDDEN: "string"     | "header_hidden"                                |
+
+strings
+--------------------------------------------------------------------------------
+| name                        | value                                          |
+| --------------------------- | ---------------------------------------------- |
+| ACTION_PRIMARY_SELECTOR     | ".header__action_primary"                      |
+| : "string"                  |                                                |
+| ACTION_PRIMARY_EVENT        | "mokui-header:action_primary"                  |
+| : "string"                  |                                                |
+| ROOT_SELECTOR: string       | ".header"                                      |

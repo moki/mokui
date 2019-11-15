@@ -6,59 +6,13 @@ import "../packages/mokui-animation";
 import "../packages/mokui-header";
 
 /* component base */
-import { Component, Emitter, Listener } from "../packages/mokui-base";
-
-interface SomeobjShape {
-        data: string;
-        meth(): string;
-}
-
-const someobj: SomeobjShape = {
-        data: "goes here",
-        meth: (): string => "od"
-};
-
-const body = document.querySelector("body");
-
-type FancyComponent<T extends object = {}> = T & {
-        fancy(): string;
-};
-
-function FancyComponent<T extends object = {}>(o: T): FancyComponent<T> {
-        return {
-                ...o,
-                fancy(): string {
-                        return "fancy as fuck";
-                }
-        };
-}
-
-const component = FancyComponent(Emitter(Component(body, someobj)));
-
-console.log(component.root());
-
-console.log("fancy?", component.root().tagName, "feeling", component.fancy());
-
-console.log(component);
-
-console.log(component.data);
-
-component.emit("hey", {});
-
-const _component = Listener(Emitter(Component(body, {})));
-console.log();
-
-_component.listen(
-        "test",
-        () => {
-                console.log("event");
-        },
-        false
-);
+// import { Component, Emitter, Listener } from "../packages/mokui-base";
+import { Header } from "../packages/mokui-header";
 
 /* tabs */
 import "../packages/mokui-tabs";
 
+/*
 const tabs = document.querySelectorAll(".tab");
 const tabsl = tabs.length;
 let activeTab;
@@ -80,11 +34,10 @@ for (let i = 0; i < tabsl; ++i) {
                                 tabs[j].classList.remove("tab_active");
         });
 }
+*/
 
-for (let i = 0; i < 3; ++i) console.log(cs[i].root());
-
+/* how to compose */
 /*
-
 // adapter type
 type __ComponentAdapter<T extends Component> = T & {
         classes(): { [key: string]: string };
@@ -149,8 +102,18 @@ const ___component = __Component(
 console.log(___component);
 console.log(___component.useClasses());
 ___component.useChange();
-
 */
+/* how to compose end */
+
+const header = document.querySelector(".header");
+
+const headerComponent = Header(header);
+
+// console.log(headerComponent);
+
+window.addEventListener("unload", () => {
+        headerComponent.destroy();
+});
 
 /* app */
 import "./styles.css";

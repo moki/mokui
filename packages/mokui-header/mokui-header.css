@@ -4,6 +4,27 @@
         --header-action-size: calc(var(--msp-1) * 1);
         --header-navigation-size: calc(var(--msp-1) * 1);
 
+        z-index: 1;
+
+        transform: translateZ(0);
+
+        transition: transform var(--animation-duration-xl)
+                        cubic-bezier(
+                                var(--animation-fn-standard-1),
+                                var(--animation-fn-standard-2),
+                                var(--animation-fn-standard-3),
+                                var(--animation-fn-standard-4)
+                        ),
+                opacity var(--animation-duration-xl)
+                        cubic-bezier(
+                                var(--animation-fn-standard-1),
+                                var(--animation-fn-standard-2),
+                                var(--animation-fn-standard-3),
+                                var(--animation-fn-standard-4)
+                        );
+
+        opacity: 1;
+
         overflow: hidden;
 
         height: var(--header-height);
@@ -14,6 +35,12 @@
 
 .header_fixed {
         position: fixed;
+}
+
+.header_hidden {
+        transform: translateY(calc(var(--layout-header-height) * -1));
+
+        opacity: 0;
 }
 
 .header__container {
@@ -33,6 +60,7 @@
 
 .header__action {
         transform: translateZ(0);
+
         transition: opacity var(--animation-duration-s)
                 cubic-bezier(
                         var(--animation-fn-sharp-1),
