@@ -1,7 +1,6 @@
 const root = Symbol("root");
 
 export type Component<T extends object = {}> = T & {
-        [root]: Element;
         attach(element: Element): Component<T>;
         root(): Element;
 };

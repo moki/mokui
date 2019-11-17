@@ -2,6 +2,7 @@ import { Component, Emitter } from "@moki.codes/mokui-base";
 import { HeaderAdapter } from "./adapter";
 import { classes, strings } from "./constants";
 
+/* TODO: typed compose, not this madness */
 const compose2 = <A, B, C>(
         f: (arg: A) => B,
         g: (arg: B) => C

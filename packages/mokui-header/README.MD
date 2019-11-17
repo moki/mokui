@@ -14,6 +14,10 @@ yarn add @moki.codes/mokui-header
 Styles
 --------------------------------------------------------------------------------
 ```
+@import "@moki.codes/mokui-header/dist/mokui-theme.css"
+@import "@moki.codes/mokui-header/dist/mokui-layout.css"
+@import "@moki.codes/mokui-header/dist/mokui-elevation.css"
+@import "@moki.codes/mokui-header/dist/mokui-animation.css"
 @import "@moki.codes/mokui-header/dist/mokui-header.css"
 ```
 
@@ -38,7 +42,7 @@ Basic Usage
             layout_type_holy-grail
             elevation
             animation">
-        <header class="layout__header header header_fixed elevation_depth_8">
+        <header class="layout__header header header_fixed elevation_depth_4">
                 <div class="layout__container layout__container-fluid header__container">
                         <div class="header__action header__action_primary">
                                 <svg class="header__icon">
