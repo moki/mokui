@@ -9,8 +9,8 @@
   "repository": "git@github.com:moki/mokui.git",
   "scripts": {
     "prepublishOnly": "yarn build:packages",
-    "build:packages": "yarn clean:packages && NODE_ENV=production lerna exec --parallel -- rollup --config ../../rollup.config.js",
-    "clean:packages": "lerna exec --parallel --stream -- rm -rf dist/",
+    "build:packages": "yarn clean:packages && NODE_ENV=production lerna exec --parallel 'rollup --config ../../rollup.config.js'",
+    "clean:packages": "lerna exec --parallel --stream 'rm -rf dist/'",
     "build:dev": "yarn clean:dev && NODE_ENV=development rollup --config ./rollup.config.js --watch",
     "clean:dev": "rm -rf stories/dist/*.js stories/dist/*.css",
     "add-sibling:packages": "node scripts/add-sibling-dependency.js",
@@ -21,22 +21,22 @@
     "run:packages": "lerna exec --stream --parallel"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.3.3",
-    "@typescript-eslint/parser": "^2.3.3",
-    "autoprefixer": "^9.6.4",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "autoprefixer": "^9.7.1",
     "cssnano": "^4.1.10",
-    "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.4.0",
-    "lerna": "^3.16.4",
-    "prettier": "^1.18.2",
-    "rollup": "^1.23.1",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.6.0",
+    "lerna": "^3.18.4",
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-terser": "^5.1.2",
-    "rollup-plugin-typescript2": "^0.24.3",
-    "typescript": "^3.6.4"
+    "rollup-plugin-typescript2": "^0.25.2",
+    "typescript": "^3.7.2"
   },
   "private": true
 }

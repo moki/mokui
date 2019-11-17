@@ -43,14 +43,20 @@ const pkg =
         process.env.LERNA_PACKAGE_NAME &&
         require(`${process.env.LERNA_PACKAGE_NAME}/package.json`);
 
+const dependencies = ({ dependencies }) => Object.keys(dependencies || {});
+
 const pkgname = ({ name }) => name;
 
 const stripscope = name => name.slice(name.lastIndexOf("/") + 1);
 
+const pkgdependencies = dependencies(pkg);
+
+const noscopepkgname = stripscope(pkgname(pkg));
+
 const _input = () =>
         PRODUCTION
                 ? {
-                          [stripscope(pkgname(pkg))]: "index.ts"
+                          [noscopepkgname]: "index.ts"
                   }
                 : [`${STORY_DIR}index.ts`];
 
@@ -69,6 +75,8 @@ const _output = () =>
                           }
                   ]
                 : { dir: BUILD_DIR, format: "esm", sourcemap: false };
+
+const _external = () => (PRODUCTION ? id => pkgdependencies.includes(id) : "");
 
 const _serve = () =>
         !PRODUCTION
@@ -95,15 +103,10 @@ const _postcss = () =>
                 extensions: [".css"],
                 ...(PRODUCTION
                         ? {
-                                  extract: `${BUILD_DIR +
-                                          stripscope(pkgname(pkg))}.css`,
+                                  extract: `${BUILD_DIR + noscopepkgname}.css`,
                                   inject: false
                           }
                         : {
-                                  /*
-                                  extract: `${BUILD_DIR}/index.css`,
-                                  inject: false
-                                  */
                                   extract: false,
                                   inject: true
                           })
@@ -111,13 +114,15 @@ const _postcss = () =>
 
 const _typescript = () =>
         typescript({
-                tsconfig: "tsconfig.json"
+                tsconfig: "../../tsconfig.json"
         });
 
 const config = {
         input: _input(),
         output: _output(),
+        external: _external(),
         plugins: [
+                json(),
                 _typescript(),
                 _livereload(),
                 _postcss(),
