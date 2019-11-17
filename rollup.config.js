@@ -1,5 +1,6 @@
 /* eslint-env node */
-
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { existsSync } from "fs";
 
 import typescript from "rollup-plugin-typescript2";
