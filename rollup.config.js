@@ -52,7 +52,7 @@ const stripscope = name => name.slice(name.lastIndexOf("/") + 1);
 
 const pkgdependencies = dependencies(pkg);
 
-const noscopepkgname = stripscope(pkgname(pkg));
+const noscopepkgname = PRODUCTION && stripscope(pkgname(pkg));
 
 const _input = () =>
         PRODUCTION
@@ -115,7 +115,7 @@ const _postcss = () =>
 
 const _typescript = () =>
         typescript({
-                tsconfig: "../../tsconfig.json"
+                tsconfig: PRODUCTION ? "../../tsconfig.json" : "tsconfig.json"
         });
 
 const config = {
