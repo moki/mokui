@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-base@0.1.0...@moki.codes/mokui-base@0.1.1) (2019-11-17)
+
+
+### Bug Fixes
+
+* **mokui-base/component:** don't expose private property ([0efa250](https://github.com/moki/mokui/commit/0efa250355de8013fad45fc57ba052b9ca567845))
+
+
+
+
+
 # 0.1.0 (2019-11-07)
 
 
