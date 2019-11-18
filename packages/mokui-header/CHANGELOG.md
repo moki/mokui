@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.3.1...@moki.codes/mokui-header@0.4.0) (2019-11-18)
+
+
+### Features
+
+* **mokui-header:** expose secondary_action selector ([e904b14](https://github.com/moki/mokui/commit/e904b14bd1c83592799e74562308b7a36fd44eeb))
+
+
+
+
+
 ## [0.3.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.3.0...@moki.codes/mokui-header@0.3.1) (2019-11-17)
 
 
