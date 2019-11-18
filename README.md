@@ -100,7 +100,7 @@ License
 --------------------------------------------------------------------------------
 BSD 3-Clause License
 
-Copyright (c) 2019, Kirill Morozov
+Copyright (c) 2019, Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
