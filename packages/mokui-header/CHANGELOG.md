@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.4.0...@moki.codes/mokui-header@0.4.1) (2019-11-20)
+
+**Note:** Version bump only for package @moki.codes/mokui-header
+
+
+
+
+
 # [0.4.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.3.1...@moki.codes/mokui-header@0.4.0) (2019-11-18)
 
 
