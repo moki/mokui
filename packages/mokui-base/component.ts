@@ -3,6 +3,7 @@ const root = Symbol("root");
 export type Component<T extends object = {}> = T & {
         attach(element: Element): Component<T>;
         root(): Element;
+        noRootErr(source: string): string;
 };
 
 export const Component = <T extends object = {}>(
@@ -17,5 +18,8 @@ export const Component = <T extends object = {}>(
         },
         root(): Element {
                 return this[root];
+        },
+        noRootErr(source: string): string {
+                return source + ": no root element found";
         }
 });

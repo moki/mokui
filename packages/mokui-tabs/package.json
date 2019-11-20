@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@moki.codes/mokui-animation": "^0.2.0",
+    "@moki.codes/mokui-base": "^0.1.1",
     "@moki.codes/mokui-theme": "^1.3.0"
   },
   "publishConfig": {
