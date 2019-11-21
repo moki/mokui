@@ -27,7 +27,7 @@ export function TabComponent<
         const self = {
                 ...o,
                 [initTab](this: TabComponent<T>): void {
-                        if (!this.root())
+                        if (!this.getRoot())
                                 throw new Error(this.noRootErr("TabComponent"));
                         this.id = this.getAttr("id");
                         if (!this.id) throw new Error(noTabIdErr);
@@ -45,7 +45,7 @@ export function TabComponent<
                         return this.hasClass(classes.TAB_ACTIVE);
                 },
                 destroy(this: TabComponent<T>): void {
-                        if (!this.root())
+                        if (!this.getRoot())
                                 throw new Error(this.noRootErr("TabComponent"));
                         this.unlisten("click", this[clickHandler]);
                         return;
@@ -124,7 +124,7 @@ export const TabsComponent = (Tab: Tab) =>
                                 this[lastActiveTabIndex] = index;
                         },
                         [initTabs](this: TabsComponent<T>): void {
-                                const tabsEl = this.root();
+                                const tabsEl = this.getRoot();
                                 if (!tabsEl)
                                         throw new Error(
                                                 this.noRootErr("TabsComponent")
@@ -165,7 +165,7 @@ export const TabsComponent = (Tab: Tab) =>
                                 );
                         },
                         destroy(this: TabsComponent<T>): void {
-                                if (!this.root())
+                                if (!this.getRoot())
                                         throw new Error(
                                                 this.noRootErr("TabsComponent")
                                         );

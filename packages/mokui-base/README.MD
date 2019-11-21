@@ -19,7 +19,9 @@ Basic Usage
 ```
 import { Component, Emitter, Listener } from "@moki.codes/mokui-base";
 
-const component = Listener(Emitter(Component({}, body)));
+const componentEl = document.querySelector(".component-name");
+
+const component = Listener(Emitter(Component(componentEl, {})));
 ```
 
 Exports
@@ -34,20 +36,13 @@ Component
 
 base object every component extends from, wraps HTML `Element`.
 
-Properties
---------------------------------------------------------------------------------
-| name                | type                     | description                 |
-| ------------------- | ------------------------ | --------------------------- |
-| Symbol("root")      | private symbol: Element  | private property storing    |
-|                     |                          | document element reference  |
-
 Methods
 --------------------------------------------------------------------------------
 | name                     | description                                       |
 | ------------------------ | ------------------------------------------------- |
 | attach(element: Element) | attach Component to the provided html Element     |
-| : T & Component<T>       | `element`                                         |
-| root():Element           | get html Element Component is attached to         |
+| : Component<T>           | `element`                                         |
+| getRoot():Element        | get html Element Component is attached to         |
 
 
 Emitter

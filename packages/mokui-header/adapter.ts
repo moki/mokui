@@ -2,48 +2,48 @@ import { Component, Emitter } from "@moki.codes/mokui-base";
 import { strings } from "./constants";
 
 export type HeaderAdapter<T extends Emitter<Component>> = T & {
-        handleActionPrimaryClick(): void;
-        getViewportScrollY(targetSelector: symbol): number;
-        getHeaderHeight(): number;
-        hasClass(name: string): boolean;
-        addClass(name: string): void;
-        removeClass(name: string): void;
+        handleActionPrimaryClick(this: HeaderAdapter<T>): void;
+        getViewportScrollY(
+                this: HeaderAdapter<T>,
+                targetSelector: symbol
+        ): number;
+        getHeaderHeight(this: HeaderAdapter<T>): number;
+        hasClass(this: HeaderAdapter<T>, name: string): boolean;
+        addClass(this: HeaderAdapter<T>, name: string): void;
+        removeClass(this: HeaderAdapter<T>, name: string): void;
 };
 
-export const HeaderAdapter = <T extends Emitter<Component>>(
+export function HeaderAdapter<T extends Emitter<Component>>(
         o: T
-): HeaderAdapter<T> => {
+): HeaderAdapter<T> {
         const self = {
                 ...o,
-                handleActionPrimaryClick(): void {
-                        (this as T).emit(
-                                strings.ACTION_PRIMARY_EVENT,
-                                {},
-                                true
-                        );
+                handleActionPrimaryClick(this: HeaderAdapter<T>): void {
+                        this.emit(strings.ACTION_PRIMARY_EVENT, {}, true);
                 },
-                getViewportScrollY(targetSelector: symbol): number {
+                getViewportScrollY(
+                        this: HeaderAdapter<T>,
+                        targetSelector: symbol
+                ): number {
                         const w = this[targetSelector] as Window;
                         const e = this[targetSelector] as Element;
                         return w.pageYOffset !== undefined
                                 ? w.pageYOffset
                                 : e.scrollTop;
                 },
-                getHeaderHeight(): number {
-                        return (this.root() as Element).clientHeight;
+                getHeaderHeight(this: HeaderAdapter<T>): number {
+                        return this.getRoot().clientHeight;
                 },
-                hasClass(name: string): boolean {
-                        return (this.root() as Element).classList.contains(
-                                name
-                        );
+                hasClass(this: HeaderAdapter<T>, name: string): boolean {
+                        return this.getRoot().classList.contains(name);
                 },
-                addClass(name: string): void {
-                        (this.root() as Element).classList.add(name);
+                addClass(this: HeaderAdapter<T>, name: string): void {
+                        this.getRoot().classList.add(name);
                 },
-                removeClass(name: string): void {
-                        (this.root() as Element).classList.remove(name);
+                removeClass(this: HeaderAdapter<T>, name: string): void {
+                        this.getRoot().classList.remove(name);
                 }
         };
 
         return self;
-};
+}

@@ -2,31 +2,43 @@ import { Component } from "./component";
 
 export type Listener<T extends Component> = T & {
         listen(
+                this: Listener<T>,
                 type: string,
                 handler: EventListener,
                 options?: AddEventListenerOptions | boolean
         ): void;
         unlisten(
+                this: Listener<T>,
                 type: string,
                 handler: EventListener,
                 options?: AddEventListenerOptions | boolean
         ): void;
 };
 
-export const Listener = <T extends Component>(component: T): Listener<T> => ({
-        ...component,
-        listen(
-                type: string,
-                handler: EventListener,
-                options: AddEventListenerOptions | boolean = false
-        ): void {
-                (this as T).root().addEventListener(type, handler, options);
-        },
-        unlisten(
-                type: string,
-                handler: EventListener,
-                options: AddEventListenerOptions | boolean = false
-        ): void {
-                (this as T).root().removeEventListener(type, handler, options);
-        }
-});
+export function Listener<T extends Component>(o: T): Listener<T> {
+        const self = {
+                ...o,
+                listen(
+                        this: Listener<T>,
+                        type: string,
+                        handler: EventListener,
+                        options: AddEventListenerOptions | boolean = false
+                ): void {
+                        this.getRoot().addEventListener(type, handler, options);
+                },
+                unlisten(
+                        this: Listener<T>,
+                        type: string,
+                        handler: EventListener,
+                        options: AddEventListenerOptions | boolean = false
+                ): void {
+                        this.getRoot().removeEventListener(
+                                type,
+                                handler,
+                                options
+                        );
+                }
+        };
+
+        return self;
+}

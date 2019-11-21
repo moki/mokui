@@ -17,16 +17,16 @@ export const TabAdapter = <T extends Emitter<Listener<Component>>>(
                 ...o,
                 id: "",
                 hasClass(this: TabAdapter<T>, name: string): boolean {
-                        return this.root().classList.contains(name);
+                        return this.getRoot().classList.contains(name);
                 },
                 addClass(this: TabAdapter<T>, name: string): void {
-                        this.root().classList.add(name);
+                        this.getRoot().classList.add(name);
                 },
                 removeClass(this: TabAdapter<T>, name: string): void {
-                        this.root().classList.remove(name);
+                        this.getRoot().classList.remove(name);
                 },
                 getAttr(this: TabAdapter<T>, name: string): string {
-                        return this.root().getAttribute(name);
+                        return this.getRoot().getAttribute(name);
                 },
                 handleClick(this: TabAdapter<T>): void {
                         this.emit(
