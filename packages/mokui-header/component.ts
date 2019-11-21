@@ -42,7 +42,6 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                 strings.ACTION_PRIMARY_SELECTOR +
                 " not found";
         const noscrolltargeterr = "HeaderComponent: provide scroll target";
-        const norooterr = "HeaderComponent: provide root element";
 
         const self = {
                 ...o,
@@ -113,7 +112,10 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                         }
                 },
                 [init](this: HeaderComponent<T>): void {
-                        if (!this.getRoot()) throw new Error(norooterr);
+                        if (!this.getRoot())
+                                throw new Error(
+                                        this.noRootErr("HeaderComponent")
+                                );
                         this[paction] = this.getRoot().querySelector(
                                 strings.ACTION_PRIMARY_SELECTOR
                         );
