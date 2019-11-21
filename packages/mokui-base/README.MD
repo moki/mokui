@@ -26,13 +26,18 @@ const component = Listener(Emitter(Component(componentEl, {})));
 
 Exports
 --------------------------------------------------------------------------------
+* `Base Component`
 * `Component`
 * `Listener`
 * `Emitter`
 
+Base Component
+--------------------------------------------------------------------------------
+`<T extends object = {}>(o?: T): (element?: Element) => Component<T>`
+
 Component
 --------------------------------------------------------------------------------
-`<T extends object = {}>(element?: Element, o: T = {} as T): Component<T>`
+`(element?: Element) => Component<{}>`
 
 base object every component extends from, wraps HTML `Element`.
 

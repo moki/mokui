@@ -88,8 +88,8 @@ export type TabsComponent<
         destroy(this: T): void;
 };
 
-export const TabsComponent = (Tab: Tab) =>
-        function<T extends TabsAdapter<Emitter<Listener<Component>>>>(
+export function TabsComponent(Tab: Tab) {
+        return function<T extends TabsAdapter<Emitter<Listener<Component>>>>(
                 o: T
         ): TabsComponent<T> {
                 const noTabElsErr =
@@ -180,6 +180,7 @@ export const TabsComponent = (Tab: Tab) =>
 
                 return self;
         };
+}
 
 export type Tabs = <V extends object = {}>(
         e: Element
