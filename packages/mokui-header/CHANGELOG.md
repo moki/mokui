@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.4.1...@moki.codes/mokui-header@0.4.2) (2019-11-21)
+
+
+### Bug Fixes
+
+* **header:** make use of components noRootErr ([a190179](https://github.com/moki/mokui/commit/a190179c3063cc3fdb09b780f936eb88f99328ab))
+
+
+
+
+
 ## [0.4.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.4.0...@moki.codes/mokui-header@0.4.1) (2019-11-20)
 
 **Note:** Version bump only for package @moki.codes/mokui-header
