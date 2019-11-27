@@ -10,9 +10,13 @@ import "../packages/mokui-header";
 // import { Component, Emitter, Listener } from "../packages/mokui-base";
 import { Header } from "../packages/mokui-header";
 import { Tabs } from "../packages/mokui-tabs";
+import { List } from "../packages/mokui-list";
 
 /* tabs */
 import "../packages/mokui-tabs";
+
+/* list */
+import "../packages/mokui-list";
 
 /*
 const tabs = document.querySelectorAll(".tab");
@@ -132,10 +136,40 @@ const tabsEl = document.querySelector(".tabs");
 
 const tabsComponent = Tabs(tabsEl);
 
+const listEl = document.querySelector(".list");
+
+const listComponent = List(listEl);
+
+// listComponent.setLiState(0, true);
+
+/*
+const lis = [].slice
+        .call(document.querySelectorAll(".list__item"))
+        .map((e, i) => {
+                e.id = i + 1;
+                console.log(e);
+        });
+
+const handler = e => {
+        console.log(e.target.id);
+        listComponent.setLiState(2, true);
+};
+listEl.addEventListener("click", handler);
+
+*/
 window.addEventListener("unload", () => {
         headerComponent.destroy();
         tabsComponent.destroy();
+        listComponent.destroy();
 });
+
+/*
+const handler = e => {
+        console.log(e);
+};
+
+document.addEventListener("mokui-list-item:clicked", handler);
+*/
 
 /* app */
 import "./styles.css";

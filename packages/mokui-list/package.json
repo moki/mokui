@@ -1,0 +1,31 @@
+{
+  "name": "@moki.codes/mokui-list",
+  "description": "list web ui component",
+  "version": "0.0.0",
+  "keywords": [
+    "component",
+    "list",
+    "web",
+    "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "main": "dist/cjs/mokui-list.js",
+  "module": "dist/esm/mokui-list.js",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-list"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@moki.codes/mokui-animation": "^0.2.0",
+    "@moki.codes/mokui-base": "^0.2.2",
+    "@moki.codes/mokui-theme": "^1.3.0"
+  }
+}
