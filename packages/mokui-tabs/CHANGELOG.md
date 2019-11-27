@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.5.2...@moki.codes/mokui-tabs@0.6.0) (2019-11-27)
+
+
+### Features
+
+* **tabs:** fix tabs background, add disabled state ([658a2e1](https://github.com/moki/mokui/commit/658a2e19b7f2bde40f1604b12cd1b3efaaaa6bd4))
+
+
+
+
+
 ## [0.5.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.5.1...@moki.codes/mokui-tabs@0.5.2) (2019-11-22)
 
 **Note:** Version bump only for package @moki.codes/mokui-tabs
