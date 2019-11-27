@@ -113,9 +113,9 @@ Methods
 
 events
 --------------------------------------------------------------------------------
-| name                    | `event.detail`    | Description                    |
-| ----------------------- | ------------------| ------------------------------ |
-| mokui-list-item:clicked | { index: number } | list item clicked              |
+| name                         | `event.detail`    | Description               |
+| -----------------------------| ------------------| ------------------------- |
+| mokui-list:list-item-clicked | { index: number } | list item clicked         |
 
 ListAdapter
 --------------------------------------------------------------------------------
@@ -156,6 +156,6 @@ strings
 | name                        | value                                          |
 | --------------------------- | ---------------------------------------------- |
 | LIST_ITEM_SELECTOR: string  | ".list__item"                                  |
-| LIST_ITEM_CLICKED_EVENT:    | "mokui-list-item:clicked"                      |
+| LIST_ITEM_CLICKED_EVENT:    | "mokui-list:list-item-clicked"                 |
 | : string                    |                                                |
 | LIST_ITEM_ID_PREFIX: string | "mokui-li-"                                    |

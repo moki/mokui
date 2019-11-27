@@ -194,12 +194,21 @@ HeaderAdapter
 Header Adapter factory provides default adapter functionality, one can override
 partially or completely used by HeaderComponent.
 
+events
+--------------------------------------------------------------------------------
+| name                                  | Description                          |
+| ------------------------------------- | ------------------------------------ |
+| mokui-header:action-primary-clicked   | header action primary clicked        |
+| mokui-header:action-secondary-clicked | header action secondary clicked      |
+
 Methods
 --------------------------------------------------------------------------------
 | name                        | description                                    |
 | --------------------------- | ---------------------------------------------- |
 | handleActionPrimaryClick()  | handler for the header__action_primary click   |
-| : void                      | event, fires strings.ACTION_PRIMARY_EVENT event|
+| : void                      | event, fires ACTION_PRIMARY_CLICK_EVENT event  |
+| handleActionSecondaryClick()| handler for the header__action_secondary click |
+| : void                      | event, fires ACTION_SECONDARY_CLICK_EVENT event|
 | getViewportScrollY(         | returns number of pixels scrolled on scroll    |
 |   targetSelector: symbol    | `targetSelector` target from top of the page   |
 | ): number                   |                                                |
@@ -220,10 +229,11 @@ classes
 
 strings
 --------------------------------------------------------------------------------
-| name                        | value                                          |
-| --------------------------- | ---------------------------------------------- |
-| ACTION_PRIMARY_SELECTOR     | ".header__action_primary"                      |
-| : "string"                  |                                                |
-| ACTION_PRIMARY_EVENT        | "mokui-header:action_primary"                  |
-| : "string"                  |                                                |
-| ROOT_SELECTOR: string       | ".header"                                      |
+| name                           | value                                       |
+| ------------------------------ | ------------------------------------------- |
+| ACTION_PRIMARY_SELECTOR        | ".header__action_primary"                   |
+| : "string"                     |                                             |
+| ACTION_PRIMARY_CLICKED_EVENT   | "mokui-header:action-primary-clicked"       |
+| : "string"                     |                                             |
+| ACTION_SECONDARY_CLICKED_EVENT | "mokui-header:action-secondary-clicked"     |
+| : "string"                     |                                             |

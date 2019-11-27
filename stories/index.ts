@@ -168,7 +168,7 @@ const handler = e => {
         console.log(e);
 };
 
-document.addEventListener("mokui-list-item:clicked", handler);
+document.addEventListener("mokui-header:action-secondary-clicked", handler);
 */
 
 /* app */

@@ -10,8 +10,10 @@
   ],
   "license": "BSD-3-Clause",
   "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "main": "dist/cjs/mokui-header.js",
+  "module": "dist/esm/mokui-header.js",
   "files": [
-    "/dist/mokui-header.css"
+    "/dist"
   ],
   "repository": {
     "type": "git",

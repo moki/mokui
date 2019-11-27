@@ -9,7 +9,9 @@ const compose2 = <A, B, C>(
 ): ((arg: A) => C) => x => g(f(x));
 
 const paction = Symbol("paction");
+const saction = Symbol("saction");
 const pactionClickHandler = Symbol("pactionClickHandler");
+const sactionClickHandler = Symbol("sactionClickHandler");
 const scrollTarget = Symbol("scrollTarget");
 const handleScrollTargetScroll = Symbol("handleScrollTargetScroll");
 const scrollTargetScrollHandler = Symbol("scrollTargetScrollHandler");
@@ -20,8 +22,10 @@ const hidingAnimation = Symbol("hidingAnimation");
 const init = Symbol("init");
 
 export type HeaderComponent<T extends HeaderAdapter<Emitter<Component>>> = T & {
-        [paction]: Element;
+        [paction]: HTMLElement;
+        [saction]: HTMLElement;
         [pactionClickHandler]: EventListener;
+        [sactionClickHandler]: EventListener;
         [lastScrollPos]: number;
         [userScrolled]: number;
         [animatingHeader]: boolean;
@@ -41,6 +45,11 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                 "HeaderComponent: " +
                 strings.ACTION_PRIMARY_SELECTOR +
                 " not found";
+        const nosactionerr =
+                "HeaderComponent: " +
+                strings.ACTION_SECONDARY_SELECTOR +
+                " not found";
+
         const noscrolltargeterr = "HeaderComponent: provide scroll target";
 
         const self = {
@@ -48,9 +57,11 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                 [scrollTarget]: null as EventTarget,
                 [userScrolled]: null as number,
                 [lastScrollPos]: null as number,
-                [paction]: null as Element,
+                [paction]: null as HTMLElement,
+                [saction]: null as HTMLElement,
                 [animatingHeader]: null as boolean,
                 [pactionClickHandler]: null as EventListener,
+                [sactionClickHandler]: null as EventListener,
                 [scrollTargetScrollHandler]: null as EventListener,
                 [handleScrollTargetScroll](this: HeaderComponent<T>): void {
                         const scrollPos = Math.max(
@@ -119,6 +130,9 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                         this[paction] = this.getRoot().querySelector(
                                 strings.ACTION_PRIMARY_SELECTOR
                         );
+                        this[saction] = this.getRoot().querySelector(
+                                strings.ACTION_SECONDARY_SELECTOR
+                        );
 
                         if (!this[paction]) throw new Error(nopactionerr);
                         this[
@@ -127,6 +141,15 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                         this[paction].addEventListener(
                                 "click",
                                 this[pactionClickHandler]
+                        );
+
+                        if (!this[paction]) throw new Error(nosactionerr);
+                        this[
+                                sactionClickHandler
+                        ] = this.handleActionSecondaryClick.bind(this);
+                        this[saction].addEventListener(
+                                "click",
+                                this[sactionClickHandler]
                         );
 
                         this[animatingHeader] = false;
@@ -147,6 +170,10 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                         this[paction].removeEventListener(
                                 "click",
                                 this[pactionClickHandler]
+                        );
+                        this[saction].removeEventListener(
+                                "click",
+                                this[sactionClickHandler]
                         );
 
                         this[scrollTarget].removeEventListener(

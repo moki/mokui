@@ -3,6 +3,7 @@ import { strings } from "./constants";
 
 export type HeaderAdapter<T extends Emitter<Component>> = T & {
         handleActionPrimaryClick(this: HeaderAdapter<T>): void;
+        handleActionSecondaryClick(this: HeaderAdapter<T>): void;
         getViewportScrollY(
                 this: HeaderAdapter<T>,
                 targetSelector: symbol
@@ -19,7 +20,18 @@ export function HeaderAdapter<T extends Emitter<Component>>(
         const self = {
                 ...o,
                 handleActionPrimaryClick(this: HeaderAdapter<T>): void {
-                        this.emit(strings.ACTION_PRIMARY_EVENT, {}, true);
+                        this.emit(
+                                strings.ACTION_PRIMARY_CLICKED_EVENT,
+                                {},
+                                true
+                        );
+                },
+                handleActionSecondaryClick(this: HeaderAdapter<T>): void {
+                        this.emit(
+                                strings.ACTION_SECONDARY_CLICKED_EVENT,
+                                {},
+                                true
+                        );
                 },
                 getViewportScrollY(
                         this: HeaderAdapter<T>,
