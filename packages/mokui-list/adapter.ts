@@ -1,5 +1,4 @@
 import { Component, Emitter, Listener } from "@moki.codes/mokui-base";
-import { strings } from "./constants";
 
 export type ListAdapter<T extends Emitter<Listener<Component>>> = T & {
         elements: HTMLElement[];

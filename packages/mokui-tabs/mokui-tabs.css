@@ -19,12 +19,12 @@
         opacity: 0.6;
         transform: translateZ(0);
 
-        transition: opacity var(--animation-duration-l)
+        transition: opacity var(--animation-duration-m)
                 cubic-bezier(
-                        var(--animation-fn-sharp-1),
-                        var(--animation-fn-sharp-2),
-                        var(--animation-fn-sharp-3),
-                        var(--animation-fn-sharp-4)
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
                 );
 
         height: var(--tab-height);
@@ -48,38 +48,39 @@
         opacity: 0;
         transform: translateZ(0);
 
-        transition: opacity var(--animation-duration-l)
+        transition: opacity var(--animation-duration-m)
                 cubic-bezier(
-                        var(--animation-fn-sharp-1),
-                        var(--animation-fn-sharp-2),
-                        var(--animation-fn-sharp-3),
-                        var(--animation-fn-sharp-4)
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
                 );
 
         height: var(--msp-m5);
         width: 100%;
 
-        background-color: var(--color-on-primary);
-}
-
-.tabs__tab:hover {
-        opacity: 0.9;
-
-        color: var(--color-on-primary);
-}
-
-.tabs__tab:hover:after {
-        opacity: 0.12;
+        background-color: var(--color-secondary);
 }
 
 .tabs__tab:after {
         content: "";
+
+        z-index: -1;
 
         position: absolute;
         left: 0;
         top: 0;
 
         opacity: 0;
+        transform: translateZ(0);
+
+        transition: opacity var(--animation-duration-m)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
 
         height: 100%;
         width: 100%;
@@ -87,10 +88,44 @@
         background-color: var(--color-primary);
 }
 
+.tabs__tab:hover {
+        opacity: 0.9;
+}
+
+.tabs__tab:hover:after {
+        opacity: 0.12;
+}
+
+.tabs__tab_active {
+        opacity: 0.9;
+}
+
 .tabs__tab_active:before {
         opacity: 0.9;
 }
 
+.tabs__tab_active:after {
+        opacity: 0.24;
+}
+
+.tabs__tab_active:hover:after {
+        opacity: 0.24;
+}
+
 .tabs__tab_active:hover:before {
         opacity: 0.9;
+}
+
+.tabs__tab_disabled {
+        opacity: 0.1;
+
+        cursor: not-allowed;
+}
+
+.tabs__tab_disabled:hover {
+        opacity: 0.1;
+}
+
+.tabs__tab_disabled:hover:after {
+        opacity: 0;
 }

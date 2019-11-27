@@ -56,6 +56,7 @@ Modificators
 | name        | value         | description                                    |
 | ----------- | ------------- | ---------------------------------------------- |
 | active      |               | give tab active state styles                   |
+| disabled    |               | give tab disabled state styles                 |
 
 Javascript
 --------------------------------------------------------------------------------
@@ -63,6 +64,8 @@ Javascript
 Basic Usage
 --------------------------------------------------------------------------------
 ```
+import { Tabs } from "@moki.codes/mokui-tabs";
+
 const tabsEl = document.querySelector(".tabs");
 const tabsComponent = Tabs(tabsEl);
 /* when done */
@@ -129,7 +132,6 @@ Methods
 | destroy(): void;               | clean up routine to be called upon deleting |
 |                                | component                                   |
 
-
 TabAdapter
 --------------------------------------------------------------------------------
 `<T extends Emitter<Listener<Component>>>`
@@ -164,3 +166,9 @@ strings
 | TAB_SELECTOR: string        | ".tabs__tab"                                   |
 | TAB_CLICKED_EVENT: string   | "mokui-tab:clicked"                            |
 | TAB_ID_PREFIX: string       | "mokui-tab-"                                   |
+
+events
+--------------------------------------------------------------------------------
+| name                    | `event.detail`    | Description                    |
+| ----------------------- | ------------------| ------------------------------ |
+| mokui-tab:clicked       | { id: string }    | tab clicked                    |

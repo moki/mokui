@@ -5,5 +5,6 @@ export const strings = {
 };
 
 export const classes = {
-        TAB_ACTIVE: "tabs__tab_active"
+        TAB_ACTIVE: "tabs__tab_active",
+        TAB_DISABLED: "tabs__tab_disabled"
 };

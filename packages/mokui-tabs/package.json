@@ -11,8 +11,10 @@
   ],
   "license": "BSD-3-Clause",
   "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "main": "dist/cjs/mokui-tabs.js",
+  "module": "dist/esm/mokui-tabs.js",
   "files": [
-    "/dist/mokui-tabs.css"
+    "/dist"
   ],
   "repository": {
     "type": "git",

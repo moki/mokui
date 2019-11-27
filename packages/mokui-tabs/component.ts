@@ -110,7 +110,10 @@ export function TabsComponent(Tab: Tab) {
                                         index > this[tabs].length - 1 ||
                                         (this[lastActiveTabIndex] != null &&
                                                 this[lastActiveTabIndex] ===
-                                                        index)
+                                                        index) ||
+                                        this[tabs][index].hasClass(
+                                                classes.TAB_DISABLED
+                                        )
                                 )
                                         return;
 
