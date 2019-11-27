@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-list@0.1.0...@moki.codes/mokui-list@0.2.0) (2019-11-27)
+
+
+### Features
+
+* **header:** emit event upon secondary action click ([202bd41](https://github.com/moki/mokui/commit/202bd41c58ce506bbdb67ec64100c4dfe42f6e14))
+
+
+
+
+
 # 0.1.0 (2019-11-27)
 
 
