@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-list",
   "description": "list web ui component",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "component",
     "list",
@@ -26,6 +26,6 @@
   "dependencies": {
     "@moki.codes/mokui-animation": "^0.2.0",
     "@moki.codes/mokui-base": "^0.2.2",
-    "@moki.codes/mokui-theme": "^1.3.0"
+    "@moki.codes/mokui-theme": "^1.4.0"
   }
 }

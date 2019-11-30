@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.5.0...@moki.codes/mokui-header@0.6.0) (2019-11-30)
+
+
+### Features
+
+* **header:** add dark theme support ([cd7637c](https://github.com/moki/mokui/commit/cd7637c3524e5effbee7440c10054c2656fb032f))
+
+
+
+
+
 # [0.5.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.4.3...@moki.codes/mokui-header@0.5.0) (2019-11-27)
 
 

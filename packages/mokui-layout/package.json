@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-layout",
   "description": "layout web ui subsystem",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "keywords": [
     "subsystem",
     "layout",
@@ -19,7 +19,7 @@
     "directory": "packages/mokui-layout"
   },
   "dependencies": {
-    "@moki.codes/mokui-theme": "^1.3.0"
+    "@moki.codes/mokui-theme": "^1.4.0"
   },
   "publishConfig": {
     "access": "public"

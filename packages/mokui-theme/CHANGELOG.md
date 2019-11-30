@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.3.0...@moki.codes/mokui-theme@1.4.0) (2019-11-30)
+
+
+### Features
+
+* **theme:** implement theme component, switches theme ([4a2d158](https://github.com/moki/mokui/commit/4a2d15894a6e1a3fceb8844768de65f3a8bd3474))
+
+
+
+
+
 # [1.3.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.2.0...@moki.codes/mokui-theme@1.3.0) (2019-10-28)
 
 
