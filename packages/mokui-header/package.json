@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-header",
   "description": "header web ui component",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "keywords": [
     "component",
     "header",
@@ -21,11 +21,11 @@
     "directory": "packages/mokui-header"
   },
   "dependencies": {
-    "@moki.codes/mokui-animation": "^0.2.0",
-    "@moki.codes/mokui-base": "^0.2.2",
-    "@moki.codes/mokui-elevation": "^0.3.0",
-    "@moki.codes/mokui-layout": "^0.4.1",
-    "@moki.codes/mokui-theme": "^1.4.0",
+    "@moki.codes/mokui-animation": "^0.3.0",
+    "@moki.codes/mokui-base": "^0.3.0",
+    "@moki.codes/mokui-elevation": "^0.4.0",
+    "@moki.codes/mokui-layout": "^0.5.0",
+    "@moki.codes/mokui-theme": "^1.5.0",
     "tslib": "^1.10.0"
   },
   "publishConfig": {

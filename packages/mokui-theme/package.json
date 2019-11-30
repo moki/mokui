@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-theme",
   "description": "theme web ui subsystem",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "keywords": [
     "subsystem",
     "component",
@@ -25,7 +25,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moki.codes/mokui-base": "^0.2.2",
+    "@moki.codes/mokui-base": "^0.3.0",
     "tslib": "^1.10.0"
   }
 }

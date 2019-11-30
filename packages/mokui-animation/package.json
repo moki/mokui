@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-animation",
   "description": "animation web ui subsystem",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "animation",
     "subsystem",

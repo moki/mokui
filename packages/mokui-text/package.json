@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-text",
   "description": "text web ui component",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "keywords": [
     "component",
     "text",
@@ -19,7 +19,7 @@
     "directory": "packages/mokui-text"
   },
   "dependencies": {
-    "@moki.codes/mokui-theme": "^1.4.0",
+    "@moki.codes/mokui-theme": "^1.5.0",
     "tslib": "^1.10.0"
   },
   "publishConfig": {
