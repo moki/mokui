@@ -96,6 +96,10 @@ export function TabsComponent(Tab: Tab) {
                         "TabsComponent: no " +
                         strings.TAB_SELECTOR +
                         " were found";
+                const multipleActiveTabsErr =
+                        "TabsComponent: multiple: " +
+                        classes.TAB_ACTIVE +
+                        "are prohibited";
                 const self = {
                         ...o,
                         [tabs]: [] as ReturnType<Tab>[],
@@ -151,6 +155,10 @@ export function TabsComponent(Tab: Tab) {
                                                         classes.TAB_ACTIVE
                                                 )
                                         ) {
+                                                if (this[lastActiveTabIndex])
+                                                        throw new Error(
+                                                                multipleActiveTabsErr
+                                                        );
                                                 this[
                                                         lastActiveTabIndex
                                                 ] = tabElslen;

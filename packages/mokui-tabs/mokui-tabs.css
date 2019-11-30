@@ -16,7 +16,7 @@
         justify-content: center;
         flex: 1 0 0;
 
-        opacity: 0.6;
+        opacity: 0.87;
         transform: translateZ(0);
 
         transition: opacity var(--animation-duration-m)
@@ -28,9 +28,12 @@
                 );
 
         height: var(--tab-height);
+        padding: 0 var(--gap);
 
         cursor: pointer;
 
+        text-align: center;
+        white-space: nowrap;
         color: var(--color-on-background);
 
         line-height: var(--msp-1);
@@ -38,7 +41,7 @@
         user-select: none;
 }
 
-.tabs__tab:before {
+.tabs__tab:after {
         content: "";
 
         position: absolute;
@@ -62,10 +65,8 @@
         background-color: var(--color-secondary);
 }
 
-.tabs__tab:after {
+.tabs__tab:before {
         content: "";
-
-        z-index: -1;
 
         position: absolute;
         left: 0;
@@ -88,44 +89,40 @@
         background-color: var(--color-primary);
 }
 
-.tabs__tab:hover {
-        opacity: 0.9;
-}
-
-.tabs__tab:hover:after {
-        opacity: 0.12;
-}
-
-.tabs__tab_active {
-        opacity: 0.9;
-}
-
-.tabs__tab_active:before {
-        opacity: 0.9;
+.tabs__tab:hover:before {
+        opacity: 0.04;
 }
 
 .tabs__tab_active:after {
-        opacity: 0.24;
+        opacity: 0.87;
 }
 
-.tabs__tab_active:hover:after {
-        opacity: 0.24;
+.tabs__tab_active:before {
+        opacity: 0.12;
 }
 
 .tabs__tab_active:hover:before {
-        opacity: 0.9;
+        opacity: 0.12;
+}
+
+.tabs__tab_active:hover:after {
+        opacity: 0.87;
+}
+
+.tabs__tab:active:not(.tabs__tab_active):not(.tabs__tab_disabled):before {
+        opacity: 0.1;
 }
 
 .tabs__tab_disabled {
-        opacity: 0.1;
+        opacity: 0.38;
 
         cursor: not-allowed;
 }
 
 .tabs__tab_disabled:hover {
-        opacity: 0.1;
+        opacity: 0.38;
 }
 
-.tabs__tab_disabled:hover:after {
+.tabs__tab_disabled:hover:before {
         opacity: 0;
 }
