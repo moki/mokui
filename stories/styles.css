@@ -3,7 +3,8 @@
         height: var(--msp-1);
         line-height: var(--msp-1);
 
-        background-color: var(--color-on-background);
+        background-color: var(--color-background);
+        color: var(--color-on-background);
 }
 
 /*

@@ -11,6 +11,7 @@ import "../packages/mokui-header";
 import { Header } from "../packages/mokui-header";
 import { Tabs } from "../packages/mokui-tabs";
 import { List } from "../packages/mokui-list";
+import { Theme } from "../packages/mokui-theme";
 
 /* tabs */
 import "../packages/mokui-tabs";
@@ -140,6 +141,10 @@ const listEl = document.querySelector(".list");
 
 const listComponent = List(listEl);
 
+const themeEl = document.querySelector(".theme");
+
+const themeComponent = Theme(themeEl);
+
 // listComponent.setLiState(0, true);
 
 /*
@@ -161,6 +166,7 @@ window.addEventListener("unload", () => {
         headerComponent.destroy();
         tabsComponent.destroy();
         listComponent.destroy();
+        themeComponent.destroy();
 });
 
 /*
