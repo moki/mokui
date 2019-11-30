@@ -25,7 +25,8 @@
     "@moki.codes/mokui-base": "^0.2.2",
     "@moki.codes/mokui-elevation": "^0.3.0",
     "@moki.codes/mokui-layout": "^0.4.1",
-    "@moki.codes/mokui-theme": "^1.4.0"
+    "@moki.codes/mokui-theme": "^1.4.0",
+    "tslib": "^1.10.0"
   },
   "publishConfig": {
     "access": "public"

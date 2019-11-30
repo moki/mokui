@@ -25,6 +25,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moki.codes/mokui-base": "^0.2.2"
+    "@moki.codes/mokui-base": "^0.2.2",
+    "tslib": "^1.10.0"
   }
 }

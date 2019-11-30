@@ -23,6 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moki.codes/mokui-theme": "^1.4.0"
+    "@moki.codes/mokui-theme": "^1.4.0",
+    "tslib": "^1.10.0"
   }
 }

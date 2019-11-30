@@ -127,9 +127,8 @@ const config = {
                 _typescript(),
                 _livereload(),
                 _postcss(),
-                _serve(),
                 terser(),
-                json()
+                _serve()
         ]
 };
 
