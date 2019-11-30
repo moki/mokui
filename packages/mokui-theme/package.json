@@ -4,14 +4,17 @@
   "version": "1.3.0",
   "keywords": [
     "subsystem",
+    "component",
     "theme",
     "web",
     "ui"
   ],
   "license": "BSD-3-Clause",
   "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "main": "dist/cjs/mokui-theme.js",
+  "module": "dist/esm/mokui-theme.js",
   "files": [
-    "/dist/mokui-theme.css"
+    "/dist"
   ],
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@moki.codes/mokui-base": "^0.2.2"
   }
 }
