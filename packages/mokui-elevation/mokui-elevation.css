@@ -1,8 +1,21 @@
 .elevation {
-        --elevation-color-umbra: rgba(0, 0, 0, 0.2);
-        --elevation-color-penumbra: rgba(0, 0, 0, 0.14);
-        --elevation-color-ambient: rgba(0, 0, 0, 0.12);
-        --elevation-transition-duration: 0.28s;
+        position: relative;
+}
+
+.elevation:before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        opacity: 0;
+
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--color-on-surface);
 }
 
 .elevation_depth_0 {
@@ -17,10 +30,18 @@
                 0px 1px 3px 0px var(--elevation-color-ambient);
 }
 
+.theme_color_dark .elevation_depth_1:before {
+        opacity: 0.05;
+}
+
 .elevation_depth_2 {
         box-shadow: 0px 3px 1px -2px var(--elevation-color-umbra),
                 0px 2px 2px 0px var(--elevation-color-penumbra),
                 0px 1px 5px 0px var(--elevation-color-ambient);
+}
+
+.theme_color_dark .elevation_depth_2:before {
+        opacity: 0.07;
 }
 
 .elevation_depth_3 {
@@ -29,10 +50,18 @@
                 0px 1px 8px 0px var(--elevation-color-ambient);
 }
 
+.theme_color_dark .elevation_depth_3:before {
+        opacity: 0.08;
+}
+
 .elevation_depth_4 {
         box-shadow: 0px 2px 4px -1px var(--elevation-color-umbra),
                 0px 4px 5px 0px var(--elevation-color-penumbra),
                 0px 1px 10px 0px var(--elevation-color-ambient);
+}
+
+.theme_color_dark .elevation_depth_4:before {
+        opacity: 0.09;
 }
 
 .elevation_depth_5 {
@@ -47,6 +76,10 @@
                 0px 1px 18px 0px var(--elevation-color-ambient);
 }
 
+.theme_color_dark .elevation_depth_6:before {
+        opacity: 0.11;
+}
+
 .elevation_depth_7 {
         box-shadow: 0px 4px 5px -2px var(--elevation-color-umbra),
                 0px 7px 10px 1px var(--elevation-color-penumbra),
@@ -57,6 +90,10 @@
         box-shadow: 0px 5px 5px -3px var(--elevation-color-umbra),
                 0px 8px 10px 1px var(--elevation-color-penumbra),
                 0px 3px 14px 2px var(--elevation-color-ambient);
+}
+
+.theme_color_dark .elevation_depth_8:before {
+        opacity: 0.12;
 }
 
 .elevation_depth_9 {
@@ -83,6 +120,10 @@
                 0px 5px 22px 4px var(--elevation-color-ambient);
 }
 
+.theme_color_dark .elevation_depth_12:before {
+        opacity: 0.14;
+}
+
 .elevation_depth_13 {
         box-shadow: 0px 7px 8px -4px var(--elevation-color-umbra),
                 0px 13px 19px 2px var(--elevation-color-penumbra),
@@ -105,6 +146,10 @@
         box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
                 0px 16px 24px 2px rgba(0, 0, 0, 0.14),
                 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+
+.theme_color_dark .elevation_depth_16:before {
+        opacity: 0.15;
 }
 
 .elevation_depth_17 {
@@ -153,4 +198,8 @@
         box-shadow: 0px 11px 15px -7px var(--elevation-color-umbra),
                 0px 24px 38px 3px var(--elevation-color-penumbra),
                 0px 9px 46px 8px var(--elevation-color-ambient);
+}
+
+.theme_color_dark .elevation_depth_24:before {
+        opacity: 0.16;
 }
