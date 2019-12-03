@@ -1,5 +1,6 @@
 export const classes = {
-        HEADER_HIDDEN: "header_hidden"
+        HEADER_HIDDEN: "header_hidden",
+        HEADER_FIXED: "header_fixed"
 };
 
 export const strings = {

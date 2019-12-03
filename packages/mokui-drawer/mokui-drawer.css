@@ -1,0 +1,136 @@
+.drawer {
+        position: fixed;
+        z-index: 1;
+
+        transform: translateX(-100%);
+
+        overflow-y: auto;
+
+        transition-property: transform, color, background-color;
+        transition-duration: var(--animation-duration-xl),
+                var(--animation-duration-2xl);
+        transition-timing-function: cubic-bezier(
+                var(--animation-fn-standard-1),
+                var(--animation-fn-standard-2),
+                var(--animation-fn-standard-3),
+                var(--animation-fn-standard-4)
+        );
+
+        border-color: rgba(0, 0, 0, 0.12);
+        border-radius: 0;
+        border-right-width: 1px;
+        border-right-style: solid;
+        width: calc(var(--screen-xs) - var(--gap) * 2);
+        height: 100%;
+
+        background-color: var(--color-background);
+
+        color: var(--color-on-background);
+}
+
+.theme_color_dark .drawer {
+        border-color: rgba(255, 255, 255, 0.12);
+}
+
+.drawer_animation_open {
+        transition-duration: var(--animation-duration-xl);
+        transition-timing-function: cubic-bezier(
+                var(--animation-fn-deceleration-1),
+                var(--animation-fn-deceleration-2),
+                var(--animation-fn-deceleration-3),
+                var(--animation-fn-deceleration-4)
+        );
+}
+
+.drawer_animation_close {
+        transition-duration: var(--animation-duration-l);
+        transition-timing-function: cubic-bezier(
+                var(--animation-fn-acceleration-1),
+                var(--animation-fn-acceleration-2),
+                var(--animation-fn-acceleration-3),
+                var(--animation-fn-acceleration-4)
+        );
+}
+
+.drawer_open {
+        transform: translateX(0);
+}
+
+.drawer__header {
+        align-items: center;
+
+        display: flex;
+
+        min-height: var(--layout-header-height);
+        padding: 0 var(--gap);
+        border-color: rgba(0, 0, 0, 0.12);
+        border-radius: 0;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+}
+
+.theme_color_dark .drawer__header {
+        border-color: rgba(255, 255, 255, 0.12);
+}
+
+.drawer-scrim {
+        position: fixed;
+        z-index: -1;
+
+        transform: translateZ(0);
+
+        transition-property: opacity;
+        transition-duration: var(--animation-duration-xl);
+        transition-timing-function: cubic-bezier(
+                var(--animation-fn-standard-1),
+                var(--animation-fn-standard-2),
+                var(--animation-fn-standard-3),
+                var(--animation-fn-standard-4)
+        );
+
+        top: 0;
+        left: 0;
+
+        opacity: 0;
+
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--color-on-background);
+}
+
+.theme_color_dark .drawer-scrim {
+        background-color: var(--color-background);
+}
+
+.drawer-scrim_animation_open {
+        transition-duration: var(--animation-duration-2xl);
+        transition-timing-function: cubic-bezier(
+                var(--animation-fn-deceleration-1),
+                var(--animation-fn-deceleration-2),
+                var(--animation-fn-deceleration-3),
+                var(--animation-fn-deceleration-4)
+        );
+}
+
+.drawer-scrim_animation_close {
+        transition-duration: var(--animation-duration-xl);
+        transition-timing-function: cubic-bezier(
+                var(--animation-fn-acceleration-1),
+                var(--animation-fn-acceleration-2),
+                var(--animation-fn-acceleration-3),
+                var(--animation-fn-acceleration-4)
+        );
+}
+
+.drawer-scrim_open {
+        z-index: 1;
+
+        opacity: 0.32;
+}
+
+.theme_color_dark .drawer-scrim_open {
+        z-index: 1;
+
+        opacity: 0.6;
+}

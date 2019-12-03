@@ -152,19 +152,21 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                                 this[sactionClickHandler]
                         );
 
-                        this[animatingHeader] = false;
-                        this[scrollTarget] = window;
-                        this[userScrolled] = this[
-                                lastScrollPos
-                        ] = this.getViewportScrollY(scrollTarget);
+                        if (this.hasClass(classes.HEADER_FIXED)) {
+                                this[animatingHeader] = false;
+                                this[scrollTarget] = window;
+                                this[userScrolled] = this[
+                                        lastScrollPos
+                                ] = this.getViewportScrollY(scrollTarget);
 
-                        this[scrollTargetScrollHandler] = this[
-                                handleScrollTargetScroll
-                        ].bind(this);
-                        this[scrollTarget].addEventListener(
-                                "scroll",
-                                this[scrollTargetScrollHandler]
-                        );
+                                this[scrollTargetScrollHandler] = this[
+                                        handleScrollTargetScroll
+                                ].bind(this);
+                                this[scrollTarget].addEventListener(
+                                        "scroll",
+                                        this[scrollTargetScrollHandler]
+                                );
+                        }
                 },
                 destroy(this: HeaderComponent<T>): void {
                         this[paction].removeEventListener(
@@ -176,10 +178,11 @@ export function HeaderComponent<T extends HeaderAdapter<Emitter<Component>>>(
                                 this[sactionClickHandler]
                         );
 
-                        this[scrollTarget].removeEventListener(
-                                "click",
-                                this[scrollTargetScrollHandler]
-                        );
+                        if (this.hasClass(classes.HEADER_FIXED))
+                                this[scrollTarget].removeEventListener(
+                                        "scroll",
+                                        this[scrollTargetScrollHandler]
+                                );
                 }
         };
 

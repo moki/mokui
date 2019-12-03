@@ -1,0 +1,34 @@
+{
+  "name": "@moki.codes/mokui-drawer",
+  "description": "drawer web ui component",
+  "version": "0.0.0",
+  "keywords": [
+    "component",
+    "list",
+    "web",
+    "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "main": "dist/cjs/mokui-drawer.js",
+  "module": "dist/esm/mokui-drawer.js",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-drawer"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@moki.codes/mokui-animation": "^0.3.0",
+    "@moki.codes/mokui-base": "^0.3.0",
+    "@moki.codes/mokui-elevation": "^0.4.0",
+    "@moki.codes/mokui-layout": "^0.5.0",
+    "@moki.codes/mokui-list": "^0.4.0",
+    "@moki.codes/mokui-theme": "^1.5.0"
+  }
+}
