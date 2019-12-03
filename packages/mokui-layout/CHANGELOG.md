@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-layout@0.5.0...@moki.codes/mokui-layout@0.6.0) (2019-12-03)
+
+
+### Features
+
+* **drawer:** implement drawer component ([a18aa64](https://github.com/moki/mokui/commit/a18aa64d8392ef114a198184aed070e9a366bda1))
+
+
+
+
+
 # [0.5.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-layout@0.4.1...@moki.codes/mokui-layout@0.5.0) (2019-11-30)
 
 

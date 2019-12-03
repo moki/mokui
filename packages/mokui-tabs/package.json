@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-tabs",
   "description": "tabs web ui component",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "keywords": [
     "component",
     "tabs",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@moki.codes/mokui-animation": "^0.3.0",
     "@moki.codes/mokui-base": "^0.3.0",
-    "@moki.codes/mokui-theme": "^1.5.0",
+    "@moki.codes/mokui-theme": "^1.6.0",
     "tslib": "^1.10.0"
   },
   "publishConfig": {

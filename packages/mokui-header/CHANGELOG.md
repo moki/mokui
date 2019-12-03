@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.7.0...@moki.codes/mokui-header@0.8.0) (2019-12-03)
+
+
+### Features
+
+* **header:** initialize scroll hide/show only on fixed header ([404212b](https://github.com/moki/mokui/commit/404212b77ce46a98587592d8c99845ad975373ac))
+
+
+
+
+
 # [0.7.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.6.0...@moki.codes/mokui-header@0.7.0) (2019-11-30)
 
 
