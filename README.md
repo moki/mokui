@@ -76,7 +76,10 @@ $ yarn build:dev
 
 cleans previous builds and builds stories development playground
 in the watch mode.
+
 stories/
+
+development playground served at localhost:3000
 
 ```
 $ yarn clean:packages
