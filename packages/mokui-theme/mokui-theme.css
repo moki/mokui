@@ -97,6 +97,7 @@ html {
 
 /* breakpoints */
 .theme_breakpoint_default {
+        --screen-xs: 320px;
         --screen-s: 480px;
         --screen-m: 766px;
         --screen-l: 990px;
