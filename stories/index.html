@@ -28,7 +28,8 @@
         >
                 <header
                         class="layout__header
-                                header header_fixed
+                                header
+                                header_fixed
                                 elevation
                                 elevation_depth_4"
                 >
@@ -113,11 +114,56 @@
                                 </div>
                         </div>
                 </header>
-                <!--
-                <aside class="layout__aside-left">
-                        side-nav
+                <div class="drawer-scrim" id="drawer-scrim"></div>
+                <aside
+                        class="layout__aside-left elevation elevation_depth_0 drawer"
+                >
+                        <div class="drawer__header">
+                                <div
+                                        class="
+                                                 text
+                                                 text_size_s
+                                                 text_weight_medium
+                                                 text_style_small-caps
+                                                 text_align_center
+                                                 "
+                                >
+                                        mokui
+                                </div>
+                        </div>
+                        <ul class="list" id="drawer-list">
+                                <li
+                                        class="list__item text text_size_s text_weight_regular text_style_small-caps"
+                                >
+                                        about
+                                </li>
+                                <li
+                                        class="list__item text text_size_s text_weight_regular text_style_small-caps"
+                                >
+                                        articles
+                                </li>
+                                <li
+                                        class="list__item list__item_active text text_size_s text_weight_regular text_style_small-caps"
+                                >
+                                        studies
+                                </li>
+                                <li
+                                        class="list__item text text_size_s text_weight_regular text_style_small-caps"
+                                >
+                                        contact
+                                </li>
+                                <li
+                                        class="list__item text text_size_s text_weight_regular text_style_small-caps"
+                                >
+                                        enabled list item
+                                </li>
+                                <li
+                                        class="list__item text text_size_s text_weight_regular text_style_small-caps list__item_disabled"
+                                >
+                                        disabled list item
+                                </li>
+                        </ul>
                 </aside>
-                -->
                 <main class="layout__main">
                         <div class="layout__container">
                                 <!-- tabs -->
@@ -156,7 +202,7 @@
                                 >
                                         List
                                 </h1>
-                                <ul class="list">
+                                <ul class="list" id="content-list">
                                         <li
                                                 class="list__item text text_size_s text_weight_medium text_style_small-caps"
                                         >

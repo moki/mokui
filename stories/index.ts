@@ -12,12 +12,16 @@ import { Header } from "../packages/mokui-header";
 import { Tabs } from "../packages/mokui-tabs";
 import { List } from "../packages/mokui-list";
 import { Theme } from "../packages/mokui-theme";
+import { Drawer } from "../packages/mokui-drawer";
 
 /* tabs */
 import "../packages/mokui-tabs";
 
 /* list */
 import "../packages/mokui-list";
+
+/* drawer */
+import "../packages/mokui-drawer";
 
 /*
 const tabs = document.querySelectorAll(".tab");
@@ -137,13 +141,58 @@ const tabsEl = document.querySelector(".tabs");
 
 const tabsComponent = Tabs(tabsEl);
 
-const listEl = document.querySelector(".list");
+const contentList = document.querySelector("#content-list");
 
-const listComponent = List(listEl);
+const contentListComponent = List(contentList);
 
 const themeEl = document.querySelector(".theme");
 
 const themeComponent = Theme(themeEl);
+
+const drawerList = document.querySelector("#drawer-list");
+
+const drawerListComponent = List(drawerList);
+
+const drawerEl = document.querySelector(".drawer");
+
+const drawerComponent = Drawer(drawerEl);
+
+/*
+const drawer = document.querySelector(".drawer");
+
+const drawerScrim = document.querySelector(".drawer-scrim");
+
+const openac = "drawer_animation_open";
+const closeac = "drawer_animation_close";
+
+const opensc = "drawer_open";
+
+const body = document.querySelector("html");
+
+const drawerHandler = (): void => {
+        drawer.classList.remove("elevation_depth_0");
+        drawer.classList.add("elevation_depth_4");
+        drawer.classList.remove(closeac);
+        drawer.classList.add(openac);
+        drawer.classList.add(opensc);
+        drawerScrim.classList.add("drawer-scrim_open");
+        body.style.setProperty("overflow", "hidden");
+};
+
+const scrimHandler = (): void => {
+        drawer.classList.remove("elevation_depth_4");
+        drawer.classList.add("elevation_depth_0");
+        drawer.classList.remove(openac);
+        drawer.classList.add(closeac);
+        drawer.classList.remove(opensc);
+        drawerScrim.classList.remove("drawer-scrim_open");
+        body.style.setProperty("overflow", "auto");
+};
+
+drawerScrim.addEventListener("click", scrimHandler);
+
+document.addEventListener("mokui-header:action-primary-clicked", drawerHandler);
+*/
 
 // listComponent.setLiState(0, true);
 
@@ -165,8 +214,17 @@ listEl.addEventListener("click", handler);
 window.addEventListener("unload", () => {
         headerComponent.destroy();
         tabsComponent.destroy();
-        listComponent.destroy();
+        drawerListComponent.destroy();
+        contentListComponent.destroy();
         themeComponent.destroy();
+        drawerComponent.destroy();
+        /*
+        document.removeEventListener(
+                "mokui-header:action-primary-clicked",
+                drawerHandler
+        );
+        drawerScrim.removeEventListener("click", scrimHandler);
+        */
 });
 
 /*
