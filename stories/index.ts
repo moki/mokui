@@ -1,9 +1,11 @@
-/* header */
+/* subsystems */
 import "../packages/mokui-theme";
 import "../packages/mokui-text";
 import "../packages/mokui-layout";
 import "../packages/mokui-elevation";
 import "../packages/mokui-animation";
+
+/* header */
 import "../packages/mokui-header";
 
 /* component base */
@@ -22,6 +24,9 @@ import "../packages/mokui-list";
 
 /* drawer */
 import "../packages/mokui-drawer";
+
+/* button */
+import "../packages/mokui-button";
 
 /*
 const tabs = document.querySelectorAll(".tab");

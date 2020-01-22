@@ -1,0 +1,223 @@
+.button {
+        transform: translateZ(0);
+        opacity: 0.87;
+
+        box-sizing: content-box;
+
+        padding: 0 calc(var(--msp-1) * 2);
+        height: calc(var(--msp-1) * 2);
+}
+
+.button_disabled {
+        opacity: 0.38;
+
+        cursor: not-allowed;
+}
+
+.button_type_raised.button_color_primary {
+        background-color: var(--color-primary);
+
+        color: var(--color-on-primary);
+}
+
+.button_type_raised.button_color_primary-light {
+        background-color: var(--color-primary-light);
+
+        color: var(--color-on-primary-light);
+}
+
+.button_type_raised.button_color_primary-dark {
+        background-color: var(--color-primary-dark);
+
+        color: var(--color-on-primary-dark);
+}
+
+.button_type_raised:before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+
+        transform: translateZ(0);
+        opacity: 0;
+
+        transition: opacity var(--animation-duration-xl)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        box-shadow: 0px 2px 4px -1px var(--elevation-color-umbra),
+                0px 4px 5px 0px var(--elevation-color-penumbra),
+                0px 1px 10px 0px var(--elevation-color-ambient);
+        height: 100%;
+        width: 100%;
+}
+
+.theme_color_dark .button_type_raised:before {
+        background-color: var(--color-on-surface);
+}
+
+.button_type_raised:after {
+        z-index: -1;
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        opacity: 0;
+        transform: translateZ(0);
+
+        transition: opacity var(--animation-duration-xl)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        box-shadow: 0px 5px 5px -3px var(--elevation-color-umbra),
+                0px 8px 10px 1px var(--elevation-color-penumbra),
+                0px 3px 14px 2px var(--elevation-color-ambient);
+        height: 100%;
+        width: 100%;
+}
+
+.button_type_raised:not(.button_disabled):hover:before {
+        opacity: 1;
+}
+
+.theme_color_dark .button_type_raised:not(.button_disabled):hover:before {
+        opacity: 0.38;
+}
+
+.button_type_raised:not(.button_disabled):hover .button__elevation {
+        opacity: 0;
+}
+
+.button_type_raised:not(.button_disabled):active:after {
+        opacity: 1;
+}
+
+.button_type_raised:not(.button_disabled):active:before {
+        opacity: 0;
+}
+
+.button_type_raised:not(.button_disabled):active .button__elevation {
+        opacity: 0;
+}
+
+.button_type_ghost:before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translateZ(0);
+        opacity: 0;
+
+        transition: opacity var(--animation-duration-m)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        height: 100%;
+        width: 100%;
+}
+
+.button_type_ghost.button_color_primary {
+        border: 1px solid var(--color-primary);
+
+        background-color: transparent;
+
+        color: var(--color-primary);
+}
+
+.button_type_ghost.button_color_primary:before {
+        background-color: var(--color-primary);
+}
+
+.button_type_ghost.button_color_primary-light {
+        border: 1px solid var(--color-primary-light);
+
+        background-color: transparent;
+
+        color: var(--color-primary-light);
+}
+
+.button_type_ghost.button_color_primary-light:before {
+        background-color: var(--color-primary-light);
+}
+
+.button_type_ghost.button_color_primary-dark {
+        border: 1px solid var(--color-primary-dark);
+
+        background-color: transparent;
+
+        color: var(--color-primary-dark);
+}
+
+.button_type_ghost.button_color_primary-dark:before {
+        background-color: var(--color-primary-dark);
+}
+
+.button_type_ghost:not(.button_disabled):hover:before {
+        opacity: 0.04;
+}
+
+.button__elevation {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+
+        transform: translateZ(0);
+        opacity: 1;
+
+        transition: opacity var(--animation-duration-xl)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        height: 100%;
+        width: 100%;
+}
+
+.button__elevation:before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        transform: translateZ(0);
+        opacity: 0;
+
+        transition: opacity var(--animation-duration-m)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--color-on-surface);
+}
