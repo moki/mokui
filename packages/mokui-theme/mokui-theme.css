@@ -163,26 +163,26 @@ html {
 }
 
 .theme_color_light {
-        --color-primary: #bdbdbd;
-        --color-primary-light: #efefef;
-        --color-primary-dark: #8d8d8d;
+        --color-secondary: #bdbdbd;
+        --color-secondary-light: #efefef;
+        --color-secondary-dark: #8d8d8d;
 
-        --color-secondary: #424242;
-        --color-secondary-light: #6d6d6d;
-        --color-secondary-dark: #1b1b1b;
+        --color-primary: #424242;
+        --color-primary-light: #6d6d6d;
+        --color-primary-dark: #1b1b1b;
 
         --color-background: #ffffff;
         --color-surface: #ffffff;
         --color-error: #bb002f;
         --color-success: #009624;
 
-        --color-on-primary: #000000;
-        --color-on-primary-light: #000000;
-        --color-on-primary-dark: #000000;
+        --color-on-secondary: #000000;
+        --color-on-secondary-light: #000000;
+        --color-on-secondary-dark: #000000;
 
-        --color-on-secondary: #ffffff;
-        --color-on-secondary-light: #ffffff;
-        --color-on-secondary-dark: #ffffff;
+        --color-on-primary: #ffffff;
+        --color-on-primary-light: #ffffff;
+        --color-on-primary-dark: #ffffff;
 
         --color-on-background: #000000;
         --color-on-surface: #000000;
