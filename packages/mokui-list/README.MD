@@ -56,6 +56,9 @@ Modificators
 | ----------------- | ----------------- | ------------------------------------ |
 | active            |                   | gives list item active state style   |
 | disabled          |                   | gives list item disabled state style |
+| size              | s, m, l           | sets vertical spacing to 1/4 of the  |
+|                   |                   | --msp-1, half of the --msp-1,        |
+|                   |                   | --msp-1; for the s,m,l respectively  |
 
 Javascript
 --------------------------------------------------------------------------------
