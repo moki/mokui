@@ -57,6 +57,10 @@ Modificators
 | ----------- | ------------- | ---------------------------------------------- |
 | active      |               | give tab active state styles                   |
 | disabled    |               | give tab disabled state styles                 |
+| size        | s, m, l       | sets vertical spacing to 1/4 of the            |
+|             |               | --msp-1, half of the --msp-1,                  |
+|             |               | --msp-1; for the s,m,l respectively            |
+
 
 Javascript
 --------------------------------------------------------------------------------

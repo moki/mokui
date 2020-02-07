@@ -1,11 +1,23 @@
 .tabs {
-        --tab-height: calc(var(--msp-1) * 2);
+        --tab-vspace: 0;
 
         display: flex;
         flex: 1 0 auto;
         flex-wrap: wrap;
 
         width: 100%;
+}
+
+.tabs_size_s {
+        --tab-vspace: 0;
+}
+
+.tabs_size_m {
+        --tab-vspace: calc(var(--msp-1) / 4);
+}
+
+.tabs_size_l {
+        --tab-vspace: calc(var(--msp-1) / 2);
 }
 
 .tabs__tab {
@@ -27,8 +39,10 @@
                         var(--animation-fn-standard-4)
                 );
 
-        height: var(--tab-height);
-        padding: 0 var(--gap);
+        padding-bottom: var(--tab-vspace);
+        padding-right: var(--gap);
+        padding-left: var(--gap);
+        padding-top: var(--tab-vspace);
 
         cursor: pointer;
 
@@ -59,7 +73,7 @@
                         var(--animation-fn-standard-4)
                 );
 
-        height: var(--msp-m5);
+        height: var(--msp-m6);
         width: 100%;
 
         background-color: var(--color-secondary);
