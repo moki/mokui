@@ -28,6 +28,9 @@ import "../packages/mokui-drawer";
 /* button */
 import "../packages/mokui-button";
 
+/* card */
+import "../packages/mokui-card";
+
 /*
 const tabs = document.querySelectorAll(".tab");
 const tabsl = tabs.length;

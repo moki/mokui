@@ -1,0 +1,30 @@
+{
+  "name": "@moki.codes/mokui-card",
+  "description": "card web ui component",
+  "version": "0.0.0",
+  "keywords": [
+    "component",
+    "card",
+    "web",
+    "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "files": [
+    "/dist/mokui-card.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-card"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@moki.codes/mokui-animation": "^0.3.0",
+    "@moki.codes/mokui-elevation": "^0.4.1",
+    "@moki.codes/mokui-text": "^0.3.1",
+    "@moki.codes/mokui-theme": "^1.6.0"
+  }
+}

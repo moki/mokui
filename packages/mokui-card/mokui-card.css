@@ -1,0 +1,179 @@
+.card {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+
+        background-color: var(--color-background);
+}
+
+.card_actionable {
+        cursor: pointer;
+}
+
+.card_actionable:before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translateZ(0);
+        opacity: 0;
+
+        transition: opacity var(--animation-duration-xl)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        box-shadow: 0px 2px 4px -1px var(--elevation-color-umbra),
+                0px 4px 5px 0px var(--elevation-color-penumbra),
+                0px 1px 10px 0px var(--elevation-color-ambient);
+        height: 100%;
+        width: 100%;
+}
+
+.theme_color_dark .card_actionable:before {
+        background-color: var(--color-on-surface);
+}
+
+.card_actionable:hover:before {
+        opacity: 1;
+}
+
+.theme_color_dark .card_actionable:hover:before {
+        opacity: 0.09;
+}
+
+.card_actionable:hover .card__elevation {
+        opacity: 0;
+}
+
+.card_actionable:after {
+        z-index: -1;
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        opacity: 0;
+        transform: translateZ(0);
+
+        transition: opacity var(--animation-duration-xl)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        box-shadow: 0px 5px 5px -3px var(--elevation-color-umbra),
+                0px 8px 10px 1px var(--elevation-color-penumbra),
+                0px 3px 14px 2px var(--elevation-color-ambient);
+        height: 100%;
+        width: 100%;
+}
+
+.theme_color_dark .card_actionable:active:before {
+        opacity: 0.12;
+}
+
+.card_actionable:active:after {
+        opacity: 1;
+}
+
+.card_actionable:active:before {
+        opacity: 0;
+}
+
+.card_actionable:active .card__elevation {
+        opacity: 0;
+}
+
+.card_type_horizontal {
+        flex-direction: row;
+}
+
+.card__elevation {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translateZ(0);
+        opacity: 1;
+
+        transition: opacity var(--animation-duration-xl)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        height: 100%;
+        width: 100%;
+}
+
+.card__elevation:before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        transform: translateZ(0);
+        opacity: 0;
+
+        transition: opacity var(--animation-duration-m)
+                cubic-bezier(
+                        var(--animation-fn-standard-1),
+                        var(--animation-fn-standard-2),
+                        var(--animation-fn-standard-3),
+                        var(--animation-fn-standard-4)
+                );
+
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--color-on-surface);
+}
+
+.card__text {
+        flex: 1 1 auto;
+
+        padding: calc(var(--msp-1) / 2) var(--msp-0) 0 var(--msp-0);
+}
+
+.card__media {
+        flex: 0 1 auto;
+
+        width: 150px;
+
+        background-color: var(--color-primary);
+        background-position: 50% 50%;
+        background-origin: border-box;
+        background-size: cover;
+}
+
+.card__header {
+        padding-bottom: calc(var(--msp-1) / 2);
+}
+
+.card__body {
+        padding-bottom: calc(var(--msp-1) / 2);
+}
+
+.card__footer {
+        padding: calc(var(--msp-1) / 2) 0;
+        border-color: rgba(0, 0, 0, 0.12);
+        border-top: 1px solid;
+        border-radius: 0;
+}
