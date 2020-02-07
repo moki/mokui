@@ -16,6 +16,7 @@ Styles
 ```
 @import "@moki.codes/mokui-tabs/dist/mokui-theme.css"
 @import "@moki.codes/mokui-tabs/dist/mokui-animation.css"
+@import "@moki.codes/mokui-list/dist/mokui-text.css"
 @import "@moki.codes/mokui-tabs/dist/mokui-tabs.css"
 ```
 
