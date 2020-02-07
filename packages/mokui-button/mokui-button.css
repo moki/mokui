@@ -1,11 +1,28 @@
 .button {
+        position: relative;
+
         transform: translateZ(0);
         opacity: 0.87;
 
-        box-sizing: content-box;
+        border: none;
+        outline: none;
 
-        padding: 0 calc(var(--msp-1) * 2);
-        height: calc(var(--msp-1) * 2);
+        user-select: none;
+
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: none;
+}
+
+.button_size_s {
+        padding: 0 calc(var(--msp-1) * 1);
+}
+
+.button_size_m {
+        padding: calc(var(--msp-1) / 4) var(--msp-1);
+}
+
+.button_size_l {
+        padding: calc(var(--msp-1) / 2) calc(var(--msp-1) * 2);
 }
 
 .button_disabled {
@@ -93,7 +110,7 @@
 }
 
 .theme_color_dark .button_type_raised:not(.button_disabled):hover:before {
-        opacity: 0.38;
+        opacity: 0.3;
 }
 
 .button_type_raised:not(.button_disabled):hover .button__elevation {
@@ -102,6 +119,10 @@
 
 .button_type_raised:not(.button_disabled):active:after {
         opacity: 1;
+}
+
+.theme_color_dark .button_type_raised:not(.button_disabled):active:before {
+        opacity: 0.5;
 }
 
 .button_type_raised:not(.button_disabled):active:before {
