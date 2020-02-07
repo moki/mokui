@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-card",
   "description": "card web ui component",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [
     "component",
     "card",
@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "@moki.codes/mokui-animation": "^0.3.0",
-    "@moki.codes/mokui-elevation": "^0.4.1",
-    "@moki.codes/mokui-text": "^0.3.1",
-    "@moki.codes/mokui-theme": "^1.6.0"
+    "@moki.codes/mokui-elevation": "^0.4.2",
+    "@moki.codes/mokui-text": "^0.3.2",
+    "@moki.codes/mokui-theme": "^1.7.0"
   }
 }

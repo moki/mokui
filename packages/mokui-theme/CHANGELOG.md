@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.6.0...@moki.codes/mokui-theme@1.7.0) (2020-02-07)
+
+
+### Features
+
+* **theme:** switch dark and light color themes ([7d71fd4](https://github.com/moki/mokui/commit/7d71fd424dd0cd06122cde8cdd98e70e61ac915c))
+
+
+
+
+
 # [1.6.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-theme@1.5.0...@moki.codes/mokui-theme@1.6.0) (2019-12-03)
 
 

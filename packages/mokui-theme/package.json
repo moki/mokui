@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-theme",
   "description": "theme web ui subsystem",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "keywords": [
     "subsystem",
     "component",

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.8.1...@moki.codes/mokui-tabs@0.9.0) (2020-02-07)
+
+
+### Features
+
+* **tabs:** add mokui-text as a dependency ([08cc9fe](https://github.com/moki/mokui/commit/08cc9fe7e35d9f18f7d15439a394b4b77884c307))
+* **tabs:** add vertical spacing ([4331f60](https://github.com/moki/mokui/commit/4331f60d9a28e9f45c65af0b681ac9d65eb50cc8))
+
+
+
+
+
 ## [0.8.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.8.0...@moki.codes/mokui-tabs@0.8.1) (2019-12-03)
 
 **Note:** Version bump only for package @moki.codes/mokui-tabs

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-elevation@0.4.1...@moki.codes/mokui-elevation@0.4.2) (2020-02-07)
+
+
+### Bug Fixes
+
+* **elevation:** fixing elevation z-index level ([f1b441a](https://github.com/moki/mokui/commit/f1b441aa5e48f2ca62a3c543b5328f9b26fac168))
+
+
+
+
+
 ## [0.4.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-elevation@0.4.0...@moki.codes/mokui-elevation@0.4.1) (2019-12-03)
 
 **Note:** Version bump only for package @moki.codes/mokui-elevation

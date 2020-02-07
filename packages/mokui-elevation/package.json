@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-elevation",
   "description": "elevation shadow web ui subsystem",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "keywords": [
     "elevation",
     "subsystem",
@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@moki.codes/mokui-theme": "^1.6.0",
+    "@moki.codes/mokui-theme": "^1.7.0",
     "tslib": "^1.10.0"
   }
 }

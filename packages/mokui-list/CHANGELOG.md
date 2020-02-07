@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-list@0.4.1...@moki.codes/mokui-list@0.5.0) (2020-02-07)
+
+
+### Features
+
+* **list:** add mokui-text as dependency ([85a472b](https://github.com/moki/mokui/commit/85a472b57f1ff17a31af3103d9b5b51cbcc96387))
+* **list:** add vertical spacing ([1502b8d](https://github.com/moki/mokui/commit/1502b8daeda62283dc471ae2fc3f04c90d4e6b7e))
+
+
+
+
+
 ## [0.4.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-list@0.4.0...@moki.codes/mokui-list@0.4.1) (2019-12-03)
 
 **Note:** Version bump only for package @moki.codes/mokui-list
