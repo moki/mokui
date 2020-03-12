@@ -109,7 +109,7 @@
 }
 
 .header__action_secondary {
-        margin-left: auto;
+        flex: 1 0 0;
 }
 
 .header__brand {
@@ -119,6 +119,7 @@
 
 .header__navigation {
         display: none;
+        flex: 1 0 0;
 
         height: var(--header-navigation-size);
 
