@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-drawer@0.1.1...@moki.codes/mokui-drawer@0.1.2) (2020-03-12)
+
+
+### Bug Fixes
+
+* **drawer:** drawer__header clearfix ([4ef1aeb](https://github.com/moki/mokui/commit/4ef1aeb5fe2a1d0dd84d71be78df425947e7a22d))
+
+
+
+
+
 ## [0.1.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-drawer@0.1.0...@moki.codes/mokui-drawer@0.1.1) (2020-02-07)
 
 **Note:** Version bump only for package @moki.codes/mokui-drawer

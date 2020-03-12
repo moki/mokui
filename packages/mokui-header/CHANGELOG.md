@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.1...@moki.codes/mokui-header@0.8.2) (2020-03-12)
+
+
+### Bug Fixes
+
+* **header:** header inner elements layout ([8cd6ce2](https://github.com/moki/mokui/commit/8cd6ce2f9dffad7395e4e990f0631d395b237677))
+
+
+
+
+
 ## [0.8.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.0...@moki.codes/mokui-header@0.8.1) (2020-02-07)
 
 **Note:** Version bump only for package @moki.codes/mokui-header

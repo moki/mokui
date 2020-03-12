@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.9.0...@moki.codes/mokui-tabs@0.9.1) (2020-03-12)
+
+
+### Bug Fixes
+
+* **tabs:** remove unnecessary sizing ([a47774f](https://github.com/moki/mokui/commit/a47774f016e79dcf486e53a540b26775951ed2b5))
+
+
+
+
+
 # [0.9.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-tabs@0.8.1...@moki.codes/mokui-tabs@0.9.0) (2020-02-07)
 
 
