@@ -73,6 +73,17 @@
         border-color: rgba(255, 255, 255, 0.12);
 }
 
+.drawer__header:before {
+        content: "";
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: 100%;
+}
+
 .drawer-scrim {
         position: fixed;
         z-index: -1;
