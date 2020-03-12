@@ -4,8 +4,6 @@
         display: flex;
         flex: 1 0 auto;
         flex-wrap: wrap;
-
-        width: 100%;
 }
 
 .tabs_size_s {
