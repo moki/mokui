@@ -1,0 +1,27 @@
+{
+  "name": "@moki.codes/mokui-link",
+  "description": "link web ui component",
+  "version": "0.0.0",
+  "keywords": [
+    "component",
+    "link",
+    "web",
+    "ui"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Kirill Morozov (moki) <morozov.kirill.moki@gmail.com>",
+  "files": [
+    "/dist/mokui-link.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moki/mokui.git",
+    "directory": "packages/mokui-link"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@moki.codes/mokui-theme": "^1.7.0"
+  }
+}
