@@ -4,6 +4,7 @@ import "../packages/mokui-text";
 import "../packages/mokui-layout";
 import "../packages/mokui-elevation";
 import "../packages/mokui-animation";
+import "../packages/mokui-link";
 
 /* header */
 import "../packages/mokui-header";
@@ -134,11 +135,11 @@ const wp = document.createElement("div");
 wp.style.setProperty("padding-top", "var(--msp-1)");
 const p = document.createElement("p");
 p.innerHTML =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At augue eget arcu dictum varius duis at consectetur lorem. Elementum curabitur vitae nunc sed velit. Commodo elit at imperdiet dui. Facilisis gravida neque convallis a cras semper auctor. Elit duis tristique sollicitudin nibh sit amet commodo nulla. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Est ante in nibh mauris. Tortor at risus viverra adipiscing at in tellus integer. Amet cursus sit amet dictum. Molestie nunc non blandit massa enim nec dui nunc. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Fames ac turpis egestas integer eget aliquet. Aenean vel elit scelerisque mauris pellentesque. Nam at lectus urna duis convallis convallis tellus id interdum. Arcu risus quis varius quam quisque id. Fermentum leo vel orci porta non pulvinar. Elementum nibh tellus molestie nunc.";
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At augue eget arcu dictum varius duis at consectetur lorem. Elementum curabitur vitae nunc sed velit. Commodo elit at imperdiet dui. Facilisis gravida neque convallis a cras semper auctor. Elit duis tristique sollicitudin nibh sit amet commodo nulla. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Est ante in nibh mauris. Tortor at risus viverra adipiscing at in tellus integer. Amet cursus sit amet dictum. Molestie nunc non blandit massa enim nec dui nunc. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Fames ac turpis egestas integer eget aliquet. <a href="https://google.com" class="link link_inline">Aenean</a> vel elit scelerisque mauris pellentesque. Nam at lectus urna duis convallis convallis tellus id interdum. Arcu risus quis varius quam quisque id. Fermentum leo vel orci porta non pulvinar. Elementum nibh tellus molestie nunc.';
 p.classList.add("text", "text_size_m", "text_length_m");
 const _p = document.createElement("p");
 _p.innerHTML =
-        "Lectus proin nibh nisl condimentum id venenatis a condimentum. Etiam sit amet nisl purus in. Nibh sed pulvinar proin gravida hendrerit. Bibendum est ultricies integer quis auctor. Diam in arcu cursus euismod quis. Luctus venenatis lectus magna fringilla urna. Tincidunt augue interdum velit euismod in pellentesque massa. Donec pretium vulputate sapien nec. Lobortis scelerisque fermentum dui faucibus in. Curabitur vitae nunc sed velit dignissim sodales. In nibh mauris cursus mattis molestie. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Cursus in hac habitasse platea dictumst.";
+        'Lectus proin nibh nisl condimentum id venenatis a condimentum. Etiam sit amet nisl purus in. Nibh sed pulvinar proin gravida hendrerit. Bibendum est ultricies integer quis auctor. Diam in arcu cursus euismod quis. Luctus venenatis lectus magna fringilla urna. Tincidunt augue interdum velit euismod in pellentesque massa. Donec pretium vulputate sapien nec. Lobortis scelerisque fermentum dui faucibus in. Curabitur vitae nunc sed velit dignissim sodales. In nibh mauris cursus mattis molestie. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Cursus in <a href="https://google.com" class="link link_inline">hac</a> habitasse platea dictumst.';
 _p.classList.add("text", "text_size_m", "text_length_m");
 let i = 10;
 for (; i--; ) wp.appendChild((i % 2 === 0 ? _p : p).cloneNode(true));
