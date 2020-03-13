@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-drawer",
   "description": "drawer web ui component",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "component",
     "list",
@@ -28,7 +28,7 @@
     "@moki.codes/mokui-base": "^0.3.0",
     "@moki.codes/mokui-elevation": "^0.4.2",
     "@moki.codes/mokui-layout": "^0.6.1",
-    "@moki.codes/mokui-list": "^0.5.0",
+    "@moki.codes/mokui-list": "^0.5.1",
     "@moki.codes/mokui-theme": "^1.7.0"
   }
 }
