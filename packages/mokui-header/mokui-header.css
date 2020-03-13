@@ -109,6 +109,7 @@
 }
 
 .header__action_secondary {
+        flex: 1 0 0;
 }
 
 .header__brand {
@@ -138,5 +139,9 @@
 
         .header__navigation {
                 display: inline-block;
+        }
+
+        .header__action_secondary {
+                flex: 0 0 0;
         }
 }
