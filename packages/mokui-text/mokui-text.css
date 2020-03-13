@@ -86,6 +86,6 @@ p + p {
         -webkit-font-feature-settings: "c2sc", "smcp";
         -moz-font-feature-settings: "c2sc", "smcp";
         font-feature-settings: "c2sc", "smcp";
-        letter-spacing: calc(var(--msc-m1) / 10);
+        letter-spacing: 0.025rem;
         font-variant-caps: all-small-caps;
 }
