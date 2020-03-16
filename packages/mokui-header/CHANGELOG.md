@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.3...@moki.codes/mokui-header@0.8.4) (2020-03-16)
+
+
+### Bug Fixes
+
+* **header:** brand color ([57727f6](https://github.com/moki/mokui/commit/57727f6cf6109ff461998e8e3f31be88887c7fb0))
+
+
+
+
+
 ## [0.8.3](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.2...@moki.codes/mokui-header@0.8.3) (2020-03-13)
 
 
