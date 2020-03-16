@@ -12,6 +12,10 @@
         cursor: pointer;
 }
 
+.card_actionable .card__text {
+        cursor: pointer;
+}
+
 .card_actionable:before {
         content: "";
 
@@ -102,7 +106,7 @@
 .card__elevation {
         content: "";
 
-        position: absolute;
+        position: absolute !important;
         left: 0;
         top: 0;
 
@@ -150,6 +154,19 @@
         flex: 1 1 auto;
 
         padding: calc(var(--msp-1) / 2) var(--msp-0) 0 var(--msp-0);
+
+        cursor: text;
+}
+
+.card__text:before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        height: 100%;
+        width: 100%;
 }
 
 .card__media {
