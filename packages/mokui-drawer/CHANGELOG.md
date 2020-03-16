@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/moki/mokui/compare/@moki.codes/mokui-drawer@0.1.3...@moki.codes/mokui-drawer@0.1.4) (2020-03-16)
+
+
+### Bug Fixes
+
+* **drawer:** header color ([5b643de](https://github.com/moki/mokui/commit/5b643de5f041f4771c7262d3df7eaf0bec0fa5b8))
+
+
+
+
+
 ## [0.1.3](https://github.com/moki/mokui/compare/@moki.codes/mokui-drawer@0.1.2...@moki.codes/mokui-drawer@0.1.3) (2020-03-13)
 
 **Note:** Version bump only for package @moki.codes/mokui-drawer
