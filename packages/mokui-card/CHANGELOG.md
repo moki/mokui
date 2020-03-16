@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-card@0.1.1...@moki.codes/mokui-card@0.1.2) (2020-03-16)
+
+
+### Bug Fixes
+
+* **card:** clearfix ([3340121](https://github.com/moki/mokui/commit/3340121f57a3b78a4a7a4147051d1607f9a63b37))
+
+
+
+
+
 ## [0.1.1](https://github.com/moki/mokui/compare/@moki.codes/mokui-card@0.1.0...@moki.codes/mokui-card@0.1.1) (2020-03-13)
 
 **Note:** Version bump only for package @moki.codes/mokui-card
