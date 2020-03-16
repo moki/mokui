@@ -115,6 +115,8 @@
 .header__brand {
         height: var(--header-brand-size);
         margin-right: var(--gap);
+
+        color: var(--color-on-background);
 }
 
 .header__navigation {
