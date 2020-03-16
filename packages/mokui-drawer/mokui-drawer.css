@@ -67,6 +67,8 @@
         border-radius: 0;
         border-bottom-width: 1px;
         border-bottom-style: solid;
+
+        color: var(--color-on-background);
 }
 
 .theme_color_dark .drawer__header {
