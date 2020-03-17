@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/moki/mokui/compare/@moki.codes/mokui-card@0.1.3...@moki.codes/mokui-card@0.1.4) (2020-03-17)
+
+
+### Bug Fixes
+
+* **card:** revert theme switch changes ([836053f](https://github.com/moki/mokui/commit/836053f3f1d72fddce5ea6120871fbace410eca8))
+
+
+
+
+
 ## [0.1.3](https://github.com/moki/mokui/compare/@moki.codes/mokui-card@0.1.2...@moki.codes/mokui-card@0.1.3) (2020-03-17)
 
 
