@@ -3,20 +3,6 @@
 
         display: flex;
 
-        transition: color var(--animation-duration-s)
-                        cubic-bezier(
-                                var(--animation-fn-standard-1),
-                                var(--animation-fn-standard-2),
-                                var(--animation-fn-standard-3),
-                                var(--animation-fn-standard-4)
-                        ),
-                background-color var(--animation-duration-s)
-                        cubic-bezier(
-                                var(--animation-fn-standard-1),
-                                var(--animation-fn-standard-2),
-                                var(--animation-fn-standard-3),
-                                var(--animation-fn-standard-4)
-                        );
         width: 100%;
 
         background-color: var(--color-background);
