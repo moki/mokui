@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.4...@moki.codes/mokui-header@0.8.5) (2020-03-19)
+
+
+### Bug Fixes
+
+* **header:** theme switch styles ([c1ec41b](https://github.com/moki/mokui/commit/c1ec41b739d9967cc8dd4c9f7d62386e4a5cf3b0))
+
+
+
+
+
 ## [0.8.4](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.3...@moki.codes/mokui-header@0.8.4) (2020-03-16)
 
 
