@@ -6,6 +6,8 @@
         width: 100%;
 
         background-color: var(--color-background);
+
+        color: var(--color-on-background);
 }
 
 .card_actionable {
