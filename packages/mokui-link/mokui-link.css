@@ -1,8 +1,4 @@
 .link {
-        position: relative;
-
-        overflow: hidden;
-
         opacity: 0.6;
 
         transition: color var(--animation-duration-2xl)
@@ -27,58 +23,25 @@
                                 var(--animation-fn-sharp-4)
                         );
 
-        padding: 0 calc(var(--gap) / 2);
-
         cursor: pointer;
 
         text-decoration: none;
+        font-weight: 600;
         color: var(--color-on-background);
 }
 
-.link_inline {
-        padding: 0;
+.link_color_primary {
+        color: var(--color-primary);
+}
+
+.link_color_secondary {
+        color: var(--color-secondary);
 }
 
 .link:hover {
         opacity: 0.9;
 }
 
-.link:after {
-        content: "";
-
-        position: absolute;
-        z-index: -1;
-        bottom: 0;
-        left: 0;
-
-        opacity: 0;
-
-        transform: translateZ(0) scaleY(1) scaleX(0.1);
-        transform-origin: left;
-
-        transition: transform var(--animation-duration-m)
-                        cubic-bezier(
-                                var(--animation-fn-sharp-1),
-                                var(--animation-fn-sharp-2),
-                                var(--animation-fn-sharp-3),
-                                var(--animation-fn-sharp-4)
-                        ),
-                opacity var(--animation-duration-m)
-                        cubic-bezier(
-                                var(--animation-fn-sharp-1),
-                                var(--animation-fn-sharp-2),
-                                var(--animation-fn-sharp-3),
-                                var(--animation-fn-sharp-4)
-                        );
-
-        height: 55%;
-        width: 100%;
-
-        background-color: var(--color-secondary);
-}
-
-.link:hover:after {
-        opacity: 0.38;
-
-        transform: scaleX(1);
+.link_underline:hover {
+        text-decoration: underline;
 }
