@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/moki/mokui/compare/@moki.codes/mokui-button@0.2.2...@moki.codes/mokui-button@0.2.3) (2020-04-06)
+
+**Note:** Version bump only for package @moki.codes/mokui-button
+
+
+
+
+
 ## [0.2.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-button@0.2.1...@moki.codes/mokui-button@0.2.2) (2020-03-17)
 
 

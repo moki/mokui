@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.5...@moki.codes/mokui-header@1.0.0) (2020-04-06)
+
+
+### Features
+
+* **header:** header__navigation-item styles ([8d6eb7c](https://github.com/moki/mokui/commit/8d6eb7c7ba5c55ed36060ba177366c0f32defc7c))
+
+
+### BREAKING CHANGES
+
+* **header:** link styles now part of the header styles.
+
+
+
+
+
 ## [0.8.5](https://github.com/moki/mokui/compare/@moki.codes/mokui-header@0.8.4...@moki.codes/mokui-header@0.8.5) (2020-03-19)
 
 

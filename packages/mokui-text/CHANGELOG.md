@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-text@0.3.3...@moki.codes/mokui-text@1.0.0) (2020-04-06)
+
+
+### Features
+
+* **text:** decouple line-height, letter spacing ([9c6992e](https://github.com/moki/mokui/commit/9c6992e5cf2cabc1e048f656ad33e79b69247f58))
+* **text:** more weight modificators ([528427f](https://github.com/moki/mokui/commit/528427ff8dc343fcc1665b2a07266128c6da4ffc))
+
+
+### BREAKING CHANGES
+
+* **text:** Decouples line-height and letter spacing to their own modificators
+
+
+
+
+
 ## [0.3.3](https://github.com/moki/mokui/compare/@moki.codes/mokui-text@0.3.2...@moki.codes/mokui-text@0.3.3) (2020-03-13)
 
 

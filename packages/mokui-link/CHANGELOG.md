@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/moki/mokui/compare/@moki.codes/mokui-link@0.2.2...@moki.codes/mokui-link@1.0.0) (2020-04-06)
+
+
+### Features
+
+* **link:** subtle link styles ([5408854](https://github.com/moki/mokui/commit/5408854d55914be08fffcb84f86bb6554644f965))
+
+
+### BREAKING CHANGES
+
+* **link:** switch to the more subtle link styles
+
+
+
+
+
 ## [0.2.2](https://github.com/moki/mokui/compare/@moki.codes/mokui-link@0.2.1...@moki.codes/mokui-link@0.2.2) (2020-03-22)
 
 

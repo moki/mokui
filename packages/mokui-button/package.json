@@ -1,7 +1,7 @@
 {
   "name": "@moki.codes/mokui-button",
   "description": "button web ui component",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "keywords": [
     "component",
     "button",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@moki.codes/mokui-animation": "^0.3.0",
     "@moki.codes/mokui-elevation": "^0.4.2",
-    "@moki.codes/mokui-text": "^0.3.3",
+    "@moki.codes/mokui-text": "^1.0.0",
     "@moki.codes/mokui-theme": "^1.7.0"
   }
 }
