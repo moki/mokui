@@ -146,6 +146,87 @@
         margin-right: var(--gap);
 }
 
+.header__navigation-item {
+        position: relative;
+
+        overflow: hidden;
+
+        opacity: 0.6;
+
+        transition: color var(--animation-duration-2xl)
+                        cubic-bezier(
+                                var(--animation-fn-standard-1),
+                                var(--animation-fn-standard-2),
+                                var(--animation-fn-standard-3),
+                                var(--animation-fn-standard-4)
+                        ),
+                background-color var(--animation-duration-2xl)
+                        cubic-bezier(
+                                var(--animation-fn-standard-1),
+                                var(--animation-fn-standard-2),
+                                var(--animation-fn-standard-3),
+                                var(--animation-fn-standard-4)
+                        ),
+                opacity var(--animation-duration-m)
+                        cubic-bezier(
+                                var(--animation-fn-sharp-1),
+                                var(--animation-fn-sharp-2),
+                                var(--animation-fn-sharp-3),
+                                var(--animation-fn-sharp-4)
+                        );
+
+        padding: 0 calc(var(--gap) / 2);
+
+        cursor: pointer;
+
+        text-decoration: none;
+        color: var(--color-on-background);
+}
+
+.header__navigation-item:hover {
+        opacity: 0.9;
+}
+
+.header__navigation-item:after {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+
+        opacity: 0;
+
+        transform: translateZ(0) scaleY(1) scaleX(0.1);
+        transform-origin: left;
+
+        transition: transform var(--animation-duration-m)
+                        cubic-bezier(
+                                var(--animation-fn-sharp-1),
+                                var(--animation-fn-sharp-2),
+                                var(--animation-fn-sharp-3),
+                                var(--animation-fn-sharp-4)
+                        ),
+                opacity var(--animation-duration-m)
+                        cubic-bezier(
+                                var(--animation-fn-sharp-1),
+                                var(--animation-fn-sharp-2),
+                                var(--animation-fn-sharp-3),
+                                var(--animation-fn-sharp-4)
+                        );
+
+        height: 55%;
+        width: 100%;
+
+        background-color: var(--color-secondary);
+}
+
+.header__navigation-item:hover:after {
+        opacity: 0.38;
+
+        transform: scaleX(1);
+}
+
 @media screen and (min-width: 990px) {
         .header__action_primary {
                 display: none;
