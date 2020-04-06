@@ -1,9 +1,25 @@
-p + p {
-        text-indent: var(--msc-0);
+.text_line-height_xs {
+        line-height: calc(var(--msp-1) / 2);
 }
 
-.text {
+.text_line-height_s {
+        line-height: calc(var(--msp-1) * 0.75);
+}
+
+.text_line-height_m {
         line-height: var(--msp-1);
+}
+
+.text_line-height_l {
+        line-height: calc(var(--msp-1) * 1.5);
+}
+
+.text_line-height_xl {
+        line-height: calc(var(--msp-1) * 2);
+}
+
+.text_letter-spacing_m {
+        letter-spacing: 0.025rem;
 }
 
 .text_length_s {
@@ -36,7 +52,6 @@ p + p {
 }
 
 .text_size_s {
-        line-height: calc(var(--msp-1) * 0.95);
         font-size: var(--msc-m1);
 }
 
@@ -53,20 +68,14 @@ p + p {
 }
 
 .text_size_2xl {
-        letter-spacing: calc(var(--msc-3) * -0.03);
-        line-height: calc(var(--msp-1) * 1.5);
         font-size: var(--msc-3);
 }
 
 .text_size_3xl {
-        letter-spacing: calc(var(--msc-4) * -0.05);
-        line-height: calc(var(--msp-1) * 2);
         font-size: var(--msc-4);
 }
 
 .text_size_4xl {
-        letter-spacing: calc(var(--msc-5) * -0.03);
-        line-height: calc(var(--msp-1) * 2);
         font-size: var(--msc-5);
 }
 
@@ -86,6 +95,5 @@ p + p {
         -webkit-font-feature-settings: "c2sc", "smcp";
         -moz-font-feature-settings: "c2sc", "smcp";
         font-feature-settings: "c2sc", "smcp";
-        letter-spacing: 0.025rem;
         font-variant-caps: all-small-caps;
 }
